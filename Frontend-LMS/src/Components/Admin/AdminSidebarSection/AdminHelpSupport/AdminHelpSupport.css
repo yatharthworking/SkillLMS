@@ -1,0 +1,332 @@
+.helpSupportAdminMainPage{
+    padding: 12px; 
+}
+
+.helpSupport_Section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.helpSupportSubSection{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.helpSupportHeaderText{
+    color:#23252E;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.helpSupportSearchBox{
+    padding: 12px;
+    display: flex; 
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 26px;
+    border: 1px solid var(--Grey-400, #898FA7);
+    background: var(--White, #FFF);
+}
+
+.helpSupportSearchInput{
+    width: 300px;
+    border: none;
+    outline: none;
+    color: var(--Grey-500, #6B728C);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.helpSupportTableContainer{
+    margin-top: 12px; 
+    background-color: #FFFFFF;
+    height: 70vh;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+.helpSupportTableContainer::-webkit-scrollbar {
+    width: 8px; /* Adjust the width to make it thin */
+}
+
+.helpSupportTableContainer::-webkit-scrollbar-thumb {
+    /* background-color: rgba(0, 0, 0, 0.2); Color of the scrollbar thumb */
+    background-color: #898FA7;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+.helpSupportTableContainer::-webkit-scrollbar-track {
+    /* background-color: rgba(0, 0, 0, 0.1); Color of the scrollbar track */
+    background: #f1f1f1;
+}
+
+.helpSupportMainSection{
+    padding: 12px;
+}
+
+.helpSupportMasterTable{
+    border-bottom: 1px solid #ECEFF5; 
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.helpSupportMasterTable th {
+    color: #898FA7;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17.5px; 
+    padding: 10px;
+    border-bottom: 1px solid #ECEFF5;
+    text-align: left;
+}
+
+.helpSupportMasterTable td {
+    padding: 6px 10px;
+    /* color: var(--Grey1, #132740); */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/* .webinarTable tbody tr:hover {
+    background: #DBECFE;
+} */
+
+/* New CSS for alternating row colors */
+.helpSupportMasterTable tbody tr:nth-child(odd) {
+    background-color: #F6F7F9;
+}
+
+.helpSupportMasterTable tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.supportSection{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.helpSupportName{
+    color: #23252E;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.supportSubSection{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+}
+
+.helpSupportDate{
+    color: #6B728C;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.markAsResolveDiv{
+        /* color: #FFFFFF; */
+    /* font-weight: 700; */
+    /* font-size: 14px; */
+    /* padding: 6px 12px; */
+    /* border-radius: 6px; */
+    /* background-color: #219EBC; */
+    text-align: right;
+    cursor: pointer;
+}
+
+.statusFilter {
+    display: flex;
+    align-items: center;
+    /* gap: 12px; */
+}
+
+.resolvedButton {
+    background-color: #F6F7F9;
+    padding: 6px 12px;
+    border-radius: 4px 4px 0px 0px;
+    color: #6B728C;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    /* margin-right: 4px; */
+}
+
+.resolvedButton.selected {
+    background-color: #219EBC;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    border-bottom: 3px solid #FFB703; 
+}
+
+.resolvedStatus {
+    color: #16A42D;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.unresolvedStatus {
+    color: #E72755;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup {
+    background-color: white;
+    padding: 20px;
+    max-width: 50%;
+    max-height: 80%;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.popup-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-content {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #aaa;
+}
+
+.readMoreLink{
+    color: #219EBC;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's above other content */
+}
+
+.loader {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.loader div {
+    width: 10px;
+    height: 10px;
+    background-color: #219EBC;
+    border-radius: 50%;
+    display: inline-block;
+    animation: loader-animation 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+@keyframes loader-animation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+
+ 
+
+.actionButtons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.deleteIconDiv {
+    cursor: pointer;
+    font-size: 20px;
+    color: #E72755;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.deleteIconDiv:hover {
+    color: #c41c45;
+}
+
+.resolve-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.resolve-textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.resolve-submit-btn {
+    align-self: flex-end;
+    background-color: #219EBC;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.resolve-submit-btn:hover {
+    background-color: #1a7d96;
+}

@@ -1,0 +1,448 @@
+.ExamPage{
+    min-height: 100vh;
+    width: 100%;
+    background: var(--Primary-50, #EEFBFD);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.ExamPageLoader{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--Primary-50, #EEFBFD);
+}
+
+.HeadlineSection,
+.ExamProgressCard,
+.ExamPaper,
+.QuestionNoSection{
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 16px 36px rgba(33, 158, 188, 0.08);
+}
+
+.HeadlineSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 18px 22px;
+    align-items: center;
+    gap: 18px;
+}
+
+.ExamHeadlineGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.ExamName{
+    font-size: 30px;
+    font-weight: 700;
+    color: #23252E;
+}
+
+.ExamMetaLine{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    color: #6B728C;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.TimeandSubmitDiv{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.RemainingTime{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px 14px;
+    background: #F2FBFD;
+    border: 1px solid #D5F3F8;
+    border-radius: 14px;
+    color: #176B87;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.RemainingTime span{
+    color: #E28B00;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.RemainingTime.warning{
+    background: #FFF4DE;
+    border-color: #FFD9A0;
+}
+
+.RemainingTime.warning span{
+    color: #E16A1A;
+}
+
+.SubmitBtn,
+.PrimaryActionBtn,
+.DialogButtonSubmit{
+    padding: 12px 18px;
+    background: #219EBC;
+    color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    box-shadow: 4px 6px 16px rgba(60, 185, 212, 0.16);
+}
+
+.ExamProgressCard{
+    padding: 18px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.ExamProgressHeader{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+}
+
+.ExamProgressHeader strong{
+    color: #23252E;
+    font-size: 18px;
+}
+
+.ExamProgressHeader p,
+.ProgressLegend span{
+    margin: 0;
+    color: #6B728C;
+    font-size: 14px;
+}
+
+.ProgressLegend{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.ExamProgressTrack{
+    height: 12px;
+    width: 100%;
+    background: #E7F3F6;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.ExamProgressFill{
+    height: 100%;
+    background: linear-gradient(90deg, #219EBC 0%, #FFB703 100%);
+    border-radius: inherit;
+}
+
+.ExamPaperSection{
+    display: flex;
+    gap: 16px;
+    align-items: stretch;
+}
+
+.ExamPaper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+    min-height: 72vh;
+    width: 72%;
+}
+
+.QuestionTopBar{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+}
+
+.QuestionNumber{
+    display: flex;
+    color: #23252E;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    border-left: 4px solid #FFB703;
+    padding-left: 10px;
+}
+
+.ReviewToggle{
+    border: 1px solid #FFC86A;
+    background: #FFF9EC;
+    color: #A76B00;
+    border-radius: 999px;
+    padding: 10px 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.ReviewToggle.active{
+    background: #FFE0A8;
+}
+
+.QuestionMarks{
+    color: #6B728C;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.QuestionDesc{
+    display: flex;
+    font-size: 22px;
+    font-weight: 700;
+    color: #3B3E4E;
+    line-height: 1.5;
+}
+
+.OptionSection{
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.OptionBox{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px;
+    border: 1px solid #D6D8E1;
+    color: #23252E;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.OptionBox.selected{
+    border-color: #219EBC;
+    background: #F2FBFD;
+}
+
+.OptionBox input[type='radio']{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+.QuestionControls{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.SecondaryActionBtn,
+.DialogButtonCancel{
+    padding: 12px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 1px solid #219EBC;
+    background: #fff;
+    color: #219EBC;
+    font-weight: 700;
+}
+
+.QuestionNoSection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 28%;
+}
+
+.LiveExamSection{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.SummaryStatsGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.summaryStatCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background: #FAFCFF;
+    border: 1px solid #E8EDF4;
+    border-radius: 16px;
+    padding: 14px 8px;
+}
+
+.NoDiv{
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #D6D8E1;
+    text-align: center;
+    color: #23252E;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 12px;
+}
+
+.NoDiv.summary{
+    color: #fff;
+    border: none;
+}
+
+.NoDiv.summary.answered{
+    background: #219EBC;
+}
+
+.NoDiv.summary.review{
+    background: #FFB703;
+}
+
+.NoDiv.summary.notAnswered{
+    background: #AAB4CF;
+}
+
+.textDiv{
+    color: #23252E;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+}
+
+.testBorder{
+    border: 1px solid #D5F3F8;
+}
+
+.questionHeading{
+    color: #23252E;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.questionsDiv{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
+}
+
+.QuestionNavButton{
+    min-height: 48px;
+    border-radius: 14px;
+    border: 1px solid #D6D8E1;
+    background: #fff;
+    color: #23252E;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.QuestionNavButton.answered{
+    background: #D8F5FB;
+    border-color: #72D2E6;
+}
+
+.QuestionNavButton.review{
+    background: #FFF0C8;
+    border-color: #FFD17B;
+}
+
+.QuestionNavButton.active{
+    box-shadow: inset 0 0 0 2px #219EBC;
+}
+
+.DialogBackdrop{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    z-index: 30;
+}
+
+.Dialog{
+    background: white;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.16);
+    text-align: center;
+    max-width: 420px;
+    width: 100%;
+}
+
+.DialogHead{
+    color: #219EBC;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.Dialog p{
+    color: #555A74;
+    line-height: 1.7;
+    margin: 16px 0 0;
+}
+
+.DialogActions{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+button:disabled{
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+@media (max-width: 1100px){
+    .ExamPaperSection{
+        flex-direction: column;
+    }
+
+    .ExamPaper,
+    .QuestionNoSection{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .ExamPage{
+        padding: 12px;
+    }
+
+    .HeadlineSection,
+    .QuestionTopBar,
+    .TimeandSubmitDiv,
+    .QuestionControls,
+    .ExamProgressHeader,
+    .DialogActions{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .SummaryStatsGrid{
+        grid-template-columns: 1fr;
+    }
+
+    .QuestionDesc{
+        font-size: 19px;
+    }
+}

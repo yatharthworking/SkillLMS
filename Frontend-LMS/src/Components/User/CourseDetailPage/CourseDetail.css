@@ -1,0 +1,313 @@
+.courseDetailPage{
+    height: 100vh;
+    width: 100%;
+    background: var(--Primary-50, #EEFBFD);
+}
+
+.courseDetailPageContainer{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.courseHomeSection{
+    width: 96%;
+    height: 90vh;
+}
+
+.courseHomeSectionContainer{
+    width: 98%;
+    height: 94%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 1%;
+}
+
+.courseDetailHeaderSection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.SectionContentTxt{
+    color: #3B3E4E;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.breadcrumSection{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.breadcrumNotSelectedTxt{
+    color: var(--Primary-500, #219EBC);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.breadcrumSelectedTxt{
+    color: var(--Grey-600, #555A74);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; 
+}
+
+.breadcrumSeperator{
+    color: var(--Grey-300, #B3B7C6);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.courseDetailContentSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 44px;
+    align-self: stretch;
+    overflow-y: auto;
+}
+
+.courseDetailContentSection::-webkit-scrollbar {
+    width: 6px; /* Adjust the width to make it thin */
+}
+
+.courseDetailContentSection::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Adjust this value as needed for roundness */
+}
+
+.courseDetailContentSection::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); /* Color of the scrollbar track */
+    border-radius: 10px; /* Optional: To also round the track */
+}
+
+.courseDetailContentSection::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Color of the scrollbar thumb on hover */
+}
+
+
+.contentHeaderSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.contentHeaderBox{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 9px;
+}
+
+.contentComponentDetailSection{
+    display: flex;
+    width: 96%;
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border-radius: 12px;
+    background: var(--White, #FFF);
+    box-shadow: 4px 4px 12px 0px rgba(33, 158, 188, 0.12);
+}
+
+.contentHeaderPicture{
+    width: 30%;
+}
+
+.contentHeaderPicture img{
+    width: 100%;
+}
+
+.contentHeaderDetails{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+}
+
+.contentHeaderDetailsBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+}
+
+.contentHeaderDetailsBoxRow{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.headerCourseTitleTxt{
+    color: var(--Grey-950, #23252E);
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.headerCourseTeacherDetailRow{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    color: var(--Grey-500, #6B728C);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contentHeaderPriceSection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.userDetailEnrollBtn{
+    border: none;
+    cursor: pointer;
+    display: flex;
+    height: 38px;
+    min-width: 110px;
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 6px;
+    background: var(--Primary-500, #219EBC);
+    box-shadow: 4px 6px 16px 0px rgba(60, 185, 212, 0.16);
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+.componentDetailBox{
+    display: flex;
+    width: 16%;
+    align-items: center;
+    gap: 11px;
+    flex-shrink: 0;
+}
+
+.componentDetailBoxTextSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.componentDetailBoxNumberTxt{
+    color: var(--Grey-950, #23252E);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+.componentDetailBoxContentTxt{
+    color: var(--Grey-500, #6B728C);
+    font-family: "Plus Jakarta Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; 
+}
+
+.horizontal-line{
+    height: 100%;
+    border-left: 2px solid var(--Primary-100, #D5F3F8);
+}
+
+.courseBriefSection{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+
+.courseBriefContainer{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1 0 0;
+}
+
+.earnCertificateContainer{
+    width: 30%;
+}
+
+.earnCertificateContainer img{
+    width: 100%;
+}
+
+.SectionsHeaderBox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.SectionsHeaderBoxLeftLine{
+    height: 100%;
+    width: 4px;
+    background: var(--Secondary-500, #FFB703);
+}
+
+.SectionsHeaderBoxTxt{
+    color: var(--Grey-950, #23252E);
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.chaptersSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}

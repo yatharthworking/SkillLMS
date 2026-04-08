@@ -1,0 +1,14 @@
+.userProfileManagePaymentPage{
+    width: 98%;
+    height: 96%;
+    padding: 1%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--White, #FFF);
+    box-shadow: 4px 4px 12px 0px rgba(33, 158, 188, 0.12);
+}

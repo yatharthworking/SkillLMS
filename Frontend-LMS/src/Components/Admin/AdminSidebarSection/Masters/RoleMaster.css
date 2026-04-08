@@ -1,0 +1,73 @@
+.roleDialogContent{
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.roleDialogRow{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.roleDialogNameBox{
+    display: flex;
+    width: 220px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.roleDialogInput{
+    display: flex;
+    height: 28px;
+    padding: 4px 8px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 6px;
+    border: 1px solid var(--Grey-400, #898FA7);
+    background: var(--White, #FFF);
+}
+
+.roleDialogActiveBox{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.roleDialogLabel{
+    color: var(--Grey-700, #464A5E);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; 
+}
+
+.roleDialgTxtArea{
+    resize: vertical;
+    display: flex;
+    height: 64px;
+    min-height: 38px;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 6px;
+    border: 1px solid var(--Grey-400, #898FA7);
+    background: var(--White, #FFF);
+}
+
+.roleDialogDescBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    flex: 1 0 0;
+}

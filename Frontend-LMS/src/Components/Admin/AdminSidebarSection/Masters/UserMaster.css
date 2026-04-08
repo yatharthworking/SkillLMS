@@ -1,0 +1,94 @@
+.userHeaderData{
+    display: flex;
+    gap: 16px;
+}
+
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+   overflow-x: hidden;
+}
+
+.userContentDetailsFields{
+    margin-top: 16px;
+    display: flex;
+    gap:16px;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.removeImageIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: red;
+    cursor: pointer;
+    /* font-size: 24px; */
+    /* font-weight: bold; */
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
+  }
+
+  .calendarField1{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--Grey-400, #898FA7);
+    border-radius: 6px;
+    padding: 2% 4%;
+  }
+
+  .calendarinputBox1{
+    height: 30px;
+    width: 100%;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border: 1px solid white;
+    background: var(--White, #FFF);
+    font-weight: 600;
+    border: none;
+  }
+
+  .calendarinputBox1:focus {
+    outline: none; /* Remove outline on focus */
+    border-color: transparent; /* Remove border on focus */
+  }
+
+  .userTableContainer {
+    /* margin-top: 12px; */
+    background-color: #FFFFFF;
+    height: 68vh;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+.userTableContainer::-webkit-scrollbar {
+  width: 6px; /* Adjust the width to make it thin */
+}
+
+.userTableContainer::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2); /* Color of the scrollbar thumb */
+}
+
+.userTableContainer::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1); /* Color of the scrollbar track */
+}
+
+.userTableContainer::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.3); /* Color of the scrollbar thumb on hover */
+}
+
+.userActionsCell {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.userActionIcon {
+  cursor: pointer;
+}
+
+.userDeleteIcon {
+  color: #e72755;
+  cursor: pointer;
+}

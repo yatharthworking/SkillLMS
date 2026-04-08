@@ -1,0 +1,294 @@
+.createWebinaPage{
+    height: 100vh;
+    width: 100%;
+    background: var(--Primary-50, #EEFBFD);
+}
+
+.createWebinarHomeSection{
+    padding: 12px;
+}
+
+.webinarHomeSection{
+    width: 96%;
+    height: 90vh;
+}
+
+.border1{
+    border: 1px solid #D5F3F8;
+    width: 100%;
+}
+
+.webinarDetailContentSection{
+    background-color: #ffffff;
+    height: 80vh; 
+    border-radius: 8px;
+}
+
+.webinarDetailsDiv{ 
+    display: flex;
+    gap: 16px;
+}
+
+.uploadImageDiv {   
+    border-radius: 4px;
+    position: relative;  
+  }
+  
+  .editImage {
+    padding: 8px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #219EBC;
+  }
+  .uploadImage {
+    cursor: pointer;
+    width: 100%; /* Adjust the size as needed */
+    height: 155px;
+    /* height: 250px; */
+  }
+  
+ 
+
+  /* .webinarSection{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  } */
+
+  .webinarFieldDiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .inputField{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .webinarTitle{
+    color: #464A5E;
+    font-weight: 600;
+    font-size: 14px
+  }
+
+  .webinarNameField{
+    width: 510px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #898FA7;
+  }
+
+  .selectOneMenuBox{
+    width: 170px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #898FA7;
+  }
+
+.feetextFiled{
+  padding: 10px;
+    width: 85px; 
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: 1px solid #898FA7;
+    border-right: none;  
+    outline: none;
+    box-sizing: border-box;
+    /* border-radius: 6px; */
+}
+  
+
+  .textField {
+    padding: 10px;
+    /* width: 85px; */
+    width: 200px;
+    /* border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px; */
+    border: 1px solid #898FA7;
+    /* border-right: none;   */
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+  
+  .selectMenuBox {
+    width: 85px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 1px solid #898FA7;
+    border-left: none; /* Remove the left border to merge with the text field */
+    outline: none;
+    box-sizing: border-box;
+    padding: 9.9px;
+    color: #219EBC;
+    font-weight: 400;
+  }
+
+  
+  
+  .feesContainer {
+    display: flex;
+    align-items: center;
+    border-radius: 6px; /* To ensure the container has rounded corners as well */
+  }
+
+  /* .horizontalLine {
+    width: 100%;
+    height: 1px;
+    background-color: #898FA7; 
+  } */
+
+
+.webinarField{
+    padding: 10px;
+    width: 170px;
+    border-radius: 6px;
+    border: 1px solid #898FA7;
+}
+.inputContainer {
+    position: relative;
+    display: flex;
+}
+
+.calendarIcon {
+    position: absolute;
+    right: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    pointer-events: none; /* Ensures the icon doesn't block input field interactions */
+}
+
+.tabContainer{
+    padding: 12px;
+    width: 98%;
+}
+
+.tabs{
+    display: flex; 
+    border-bottom: 1px solid #D5F3F8;
+}
+
+.tabButton {
+    background-color: #F6F7F9;
+    border: none;
+    border-radius: 4px 4px 0px 0px;
+    padding: 2px 12px;
+    cursor: pointer; 
+    text-align: center;
+    color: #6B728C;
+    font-weight: 600;
+    font-size: 14px;
+    height: 24px;
+}
+ 
+
+.tabButton.active {
+    background-color: #219EBC;
+    color: white; /* To ensure the text is readable on a blue background */
+    border-bottom: 3px solid #FFB703; 
+}
+
+.webinarButtonDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+}
+ 
+.webinarCancelButton{
+    padding: 6px 12px;
+    border: 1px solid #219EBC;
+    border-radius: 6px; 
+    width: 110px;
+    color: #219EBC;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.webinarPreviewButton{
+    padding: 6px 12px;
+    background-color:  #FFB703;
+    border: none;
+    border-radius: 6px; 
+    width: 110px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.webinarCreateButton{
+    padding: 6px 12px;
+    background-color: #219EBC;
+    border: none;
+    border-radius: 6px; 
+    width: 110px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meetlinkDiv{
+  padding: 6px 12px;
+  background-color: #219EBC;
+  color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.inputContainer{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+ 
+.loaderWrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Ensure it's on top of other content */
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.loaderWrapper > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.webinarHomeSectionContainer {
+  position: relative; /* Ensure it covers the whole container */
+}
+
+
+ 
+
+
+  

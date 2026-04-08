@@ -1,0 +1,497 @@
+.progressSection {
+    display: flex;
+    width: 100%;
+    gap: 12px;
+  }
+  
+  .lessonSection { 
+    background-color: #ffffff;
+    width: 25%;
+    height: 74vh;
+    border-radius: 8px;
+    padding: 1%;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  
+  .contentDetailSection {
+    width: 75%;
+    background-color: #ffffff;
+    height: 74vh;
+    border-radius: 8px;
+    padding: 1%;
+    overflow-y: auto;
+  }
+  .contentDetailSection::-webkit-scrollbar {
+    width: 6px; /* Adjust the width to make it thin */
+}
+
+.contentDetailSection::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Color of the scrollbar thumb */
+}
+.contentDetailSection::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); /* Color of the scrollbar track */
+}
+
+.contentDetailSection::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Color of the scrollbar thumb on hover */
+}
+  
+  .userHeaderHorizontalLine {
+    width: 100%;
+    border-top: 1px solid var(--Primary-100, #D5F3F8);
+    margin: 10px 0;
+  }
+  
+  .chapterList {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow-y: auto;
+    color: #23252E;
+    font-weight: 500;
+  }
+
+  .chapterList::-webkit-scrollbar {
+    width: 6px; /* Adjust the width to make it thin */
+}
+
+.chapterList::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Color of the scrollbar thumb */
+}
+.chapterList::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); /* Color of the scrollbar track */
+}
+
+.chapterList::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Color of the scrollbar thumb on hover */
+}
+  
+  .chapterItem {
+    display: flex;
+    flex-direction: row; 
+  }
+
+
+  .chapterName{
+    display: flex;
+    gap: 8px;
+    color: #6B728C;
+    font-weight: 500;
+    font-style: Plus Jakarta Sans;
+  }
+
+.checkboxWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    position: relative;
+    margin-right: 12px;
+}
+
+.verticalLine {
+    position: absolute;
+    left: 50%; 
+    top: -25px;
+    bottom: 0;
+    width: 1px;
+    background-color: #B3B7C6;
+  }
+  
+  .verticalLine.completedLine {
+    background-color: #219EBC;
+  }
+
+.chapterCheckbox {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #B3B7C6;
+    border-radius: 50%;
+    color: white;
+    background-color: #fff;
+    z-index: 0;
+}
+
+.chapterCheckbox.completed {
+    background-color: #219EBC;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+.chapterContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px 8px;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 6px;
+    margin: 0 4px;
+    
+}
+
+  .chapterContent:hover {
+    background-color: #e9ecf3;
+  }
+  
+  .chapterContent.completed {
+    background-color: #B0E7F1;
+  }
+
+.chapterIconAndText {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.chapterItem span:first-child {
+    font-weight: 500;
+}
+
+.courseStatusContainer{
+    width:40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.backStatus{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #B3B7C6;
+    padding: 6px 12px;
+    border-radius: 26px;
+    width: 79px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #B3B7C6;
+    cursor: pointer;
+}
+.markAsCompleteButton.completed:disabled {
+  background-color: green;
+  color: white; 
+  cursor: not-allowed; 
+  opacity: 0.5;
+}
+
+
+.markAsCompleteButton {
+ display: flex;
+ justify-content: center;
+ background-color: #219EBC;
+ padding: 6px 12px;
+ border-radius: 6px;
+ width: 148px;
+ font-weight: 600;
+ font-size: 14px;
+ color: #fff;
+ cursor: pointer;
+}
+
+.selectedChapter {
+    background-color: #e9ecf3; 
+  }
+
+.courseFolder{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 24px;
+    
+}
+
+.courseHover{
+    border: 1px solid #fff;
+    cursor: pointer;
+    border: 1px solid transparent; 
+    transition: border 0.3s ease-in-out;
+    border-radius: 6px;
+}
+
+
+
+.fileTitle{
+    color: #23252E;
+    font-weight: 500;
+}
+
+.quiz-container {
+    margin-top: 24px;
+  }
+  
+  .quizLogoHeader {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .quizHeader {
+    color: #219EBC;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  .question {
+    margin-top: 24px;
+    color: #23252E;
+    font-weight: 500;
+  }
+  
+  .options {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    margin: 12px 0;
+  }
+  
+  .optionValue {
+    display: flex; 
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #D6D8E1;
+    padding: 8px;
+    cursor: pointer; 
+  }
+  
+  .optionValue.selected {
+    background-color: #219EBC;
+    color: #000; 
+  }
+  
+  .optionCheckbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #D6D8E1; 
+    text-align: center; 
+    line-height: 20px; 
+    font-size: 16px;
+    background-color: #fff;
+    color: #219EBC; 
+  }
+  
+  .optionCheckbox.completed {
+    background-color: #fff;
+    color: #219EBC; 
+  }
+  
+  .optionCheckbox.wrong {
+    background-color: #fff;
+    color: red;
+  }
+  
+  .questionLabel {
+    display: flex;
+    align-items: center;
+  }
+  
+  .actionButton {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .clearButton {
+    display: flex;
+    justify-content: center;
+    color: #219EBC;
+    padding: 6px 12px;
+    border: 1px solid #219EBC;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 6px;
+    width: 110px;
+    cursor: pointer;
+  }
+  
+  .submitButton {
+    display: flex;
+    justify-content: center;
+    background-color: #219EBC;
+    color: #fff;
+    padding: 6px 12px;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 6px;
+    width: 110px;
+    cursor: pointer;
+  }
+  
+  .optionValue.correct {
+    background-color: #5AED71;
+    color: #000;
+  }
+  
+  .optionValue.incorrect {
+    background-color: #F1839E;
+    color: #000;
+  }
+  
+  .correct-answer-message {
+    margin-top: 20px;
+    color: #4caf50;
+    font-weight: 600;
+  }
+  
+  
+
+/* Modal container */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation-name: modalopen;
+    animation-duration: 0.4s;
+    position: relative;
+  }
+  
+  /* Animation */
+  @keyframes modalopen {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+  
+  /* Close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* PDF Viewer */
+  .pdfViewer {
+    width: 100%;
+    height: 600px;
+    overflow: auto;
+    position: relative;
+  }
+  
+  .pdfViewer canvas {
+    display: block;
+  }
+  
+  .pdfViewer .pdfViewer-internal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: auto;
+  }
+  
+  .video-container::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+  }
+  
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-overlay h2 {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .video-overlay p {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+
+  .toaster {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f44336; /* Red color for error message */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    z-index: 1000;
+    animation: fadeInOut 3s;
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    90% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }

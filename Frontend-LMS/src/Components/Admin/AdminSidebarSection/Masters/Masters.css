@@ -1,0 +1,268 @@
+.PageMainContain{
+    padding: 1%;
+    height: auto;
+    width: 98%;
+    display: flex;
+    background: var(--Primary-50, #EEFBFD);
+    flex-direction: column;
+    gap: 12px;
+}
+
+.PageHeadlineBar{
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Headline{
+    color: #000;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.borderLineBlue{
+    width: 100%;
+    border: 1px solid  var(--Primary-100, #D5F3F8);
+}
+
+
+
+/* <>
+     <div className='PageMainContain'>
+
+      <div className="PageHeadlineBar">
+        <div className='Headline'>Organisation</div>
+      </div>
+      <div className="borderLineBlue"></div>
+
+      <div className='ContentContainer'>
+        hii
+
+      </div>
+
+     </div>
+</> */
+
+/* ----------------Header And Search with button add ----------------*/
+.SearchSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HeaderAndSearchSection{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.BtnSection{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #219EBC;
+    height: 24px;
+    border: none;
+    padding: 6px 12px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.HeaderText{
+    color:#23252E;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.SearchBox{
+    padding: 12px;
+    display: flex; 
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 26px;
+    border: 1px solid var(--Grey-400, #898FA7);
+    background: var(--White, #FFF);
+}
+
+.SearchInputBox{
+    width: 300px;
+    border: none;
+    outline: none;
+    color: var(--Grey-500, #6B728C);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* <div className='SearchSection'>
+        <div className='HeaderAndSearchSection'>
+          <div className='HeaderText'>Branches</div> 
+          <div className="SearchBox">
+              <input
+                className="SearchInputBox"
+                placeholder="Search Branch Name / Location"
+              />
+              <img src={SearchIcon} alt="Search" />
+            </div>
+        </div>
+        <div className='BtnSection'>
+          <img src={Plus} alt="Add" />
+          <div className='webinarButton'>Add Branch</div>
+        </div>
+      </div> */
+
+
+/* --------------------------Table Section ----------------------------- */
+
+.TableWhiteContainer{
+    padding: 12px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow-y: auto;
+    box-shadow: 4px 4px 12px 0px #219EBC1F;
+}
+
+.Table{
+    border-bottom: 1px solid #ECEFF5; 
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.Table th {
+    color: #898FA7;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17.5px; 
+    padding: 10px;
+    border-bottom: 1px solid #ECEFF5;
+    text-align: left;
+    position: sticky;
+}
+
+.Table td {
+    padding: 6px 10px;
+    color: var(--Grey1, #132740);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Table tbody tr:nth-child(odd) {
+    background-color: #F6F7F9;
+}
+
+.Table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.MenuItem{
+     font-size: 14px;
+     cursor: 'pointer';
+     gap: 8px;
+     justify-content:'center';
+}
+
+
+      /* <div className='TableWhiteContainer'>
+        <table className='Table'>
+          <thead>
+                <th>Branch Name</th>
+                <th>Address</th> 
+                <th></th>
+          </thead>
+          <tbody>
+            <tr>
+                <td>Amity Lucknow</td>
+                <td>456 Second Ave, Townsville, TX 67890</td>
+                 <td>
+                  <img src={Action} alt="Edit" style={{cursor: 'pointer'}} onClick={handleEditClick} />
+                  <Menu anchorEl={menuAnchor} open={Boolean(menuAnchor)} onClose={handleMenuClose}>                                                                  
+                      <MenuItem className='MenuItem' onClick={handleMenuClose}>Edit</MenuItem>
+                  </Menu>
+                  </td>
+                </td>
+            </tr>
+          </tbody>
+        </table>
+      </div> */
+
+
+
+
+/* --------------------------tab Change Section ----------------------------- */
+
+
+.tabContainer{
+    padding: 12px;
+    width: 98%;
+}
+
+.tabs{
+    display: flex; 
+    border-bottom: 1px solid #D5F3F8;
+}
+
+.tabButton {
+    background-color: #F6F7F9;
+    border: none;
+    border-radius: 4px 4px 0px 0px;
+    padding: 2px 12px;
+    cursor: pointer; 
+    text-align: center;
+    color: #6B728C;
+    font-weight: 600;
+    font-size: 14px;
+    height: 24px;
+}
+ 
+
+.tabButton.active {
+    background-color: #219EBC;
+    color: white; /* To ensure the text is readable on a blue background */
+    border-bottom: 3px solid #FFB703; 
+}
+
+/* 
+<div className="tabContainer">
+                <div className="tabs">
+                  <div
+                    className={`tabButton ${activeTab === 'speakers' ? 'active' : ''}`}
+                    onClick={() => setActiveTab('speakers')}
+                  >
+                    Speakers
+                  </div>
+                  <div
+                    className={`tabButton ${activeTab === 'additionalContents' ? 'active' : ''}`}
+                    onClick={() => setActiveTab('additionalContents')}
+                  >
+                    Additional Contents
+                  </div>
+                </div>
+          </div> 
+
+          {activeTab === 'speakers' && (
+            <div className="tabContent"> Speaker </div>
+           )}
+          {activeTab === 'additionalContents' && (
+            <div className="tabContent"> hello  </div>
+           )} 
+            */
+
+
+
+
+

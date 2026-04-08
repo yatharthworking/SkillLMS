@@ -1,0 +1,358 @@
+.adminDashboardContainer {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+.dashboardDetailsView {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboardDetailsViewTitle {
+    margin: 12px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.dashboardDetailsViewHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 12px;
+    border-radius: 12px;
+    padding: 0 12px;
+    height: 102px;
+    position: relative; /* Make sure the pseudo-element is positioned relative to this div */
+    background: linear-gradient(to right, #102E3C, #116390);
+    color: #fff;
+}
+
+.dashboardDetailsViewHeader::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('../../../Assets/Images/BGdashboard.svg') no-repeat right center;
+    background-size: contain;
+    pointer-events: none; /* Ensure it doesn't interfere with content */
+    border-radius: 12px;
+}
+
+
+
+.headerAdmin {
+    font-weight: 700;
+    font-size: 20px;
+    color: #3CB9D4;
+}
+
+.branchSelectHeader {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.selectHeaderBranch {
+    width: 250px;
+    border-radius: 36px;
+    color: #fff;
+    background: #102E3C;
+    /* opacity: 30%; */
+    border: 1px solid #898FA7;
+    height: 38px;
+    padding: 10px;
+}
+
+/*CARD DETAILS CSS*/
+
+.cardDetailsSection {
+  width: 99%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 16px 8px 16px 16px;
+}
+  
+  .infoCard {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    width: 46.5%; 
+    height: 150px;
+    position: relative;
+  }
+  
+  .cardTitle {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #6B728C;
+  }
+  
+  .cardValue {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .cardSubItems {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+  }
+
+  /*Student Card*/
+  
+  .StudentcardSubItem {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding:4px;
+    gap: 4px;
+    background: #EAEEFF;
+  }
+  
+  .StudentsubItemTitle {
+    display: flex;
+    gap:10px;
+    align-items: center;
+    color: #5A73E0;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+    /*Teacher Card*/
+  
+    .TeachercardSubItem {
+        width: 100%;
+        height: 54px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding:4px;
+        gap: 4px;
+        background: #CAF3FC;
+      }
+      
+      .TeachersubItemTitle {
+        display: flex;
+        gap:10px;
+        align-items: center;
+        color: #2BA0BA;
+        font-weight: 600;
+        font-size: 12px;
+      }
+
+      
+    /*Admin Card*/
+  
+    .AdmincardSubItem {
+        width: 100%;
+        height: 54px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding:4px;
+        gap: 4px;
+        background: #FFE0F8;
+      }
+      
+      .AdminsubItemTitle {
+        display: flex;
+        gap:10px;
+        align-items: center;
+        color: #D731B2;
+        font-weight: 600;
+        font-size: 12px;
+      }
+
+          /*Upcoming Card*/
+  
+    .UpcomingcardSubItem {
+        width: 100%;
+        height: 54px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding:4px;
+        gap: 4px;
+        background: #FCF1E1;
+      }
+      
+      .UpcomingsubItemTitle {
+        display: flex;
+        gap:10px;
+        align-items: center;
+        color: #F79E1B;
+        font-weight: 600;
+        font-size: 12px;
+      }
+
+                /*Inprogress Card*/
+  
+    .InprogresscardSubItem {
+        width: 100%;
+        height: 54px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding:4px;
+        gap: 4px;
+        background: #CEF3E8;
+      }
+      
+      .InprogresssubItemTitle {
+        display: flex;
+        gap:10px;
+        align-items: center;
+        color: #2BBA90;
+        font-weight: 600;
+        font-size: 12px;
+      }
+
+                /*Completed Card*/
+  
+    .CompletedcardSubItem {
+        width: 100%;
+        height: 54px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding:4px;
+        gap: 4px;
+        background: #E3E3EB;
+      }
+      
+      .CompletedsubItemTitle {
+        display: flex;
+        gap:10px;
+        align-items: center;
+        color: #696986;
+        font-weight: 600;
+        font-size: 12px;
+      }
+  
+        /*Classroom Card*/
+  
+    .ClassroomcardSubItem {
+        width: 100%;
+        height: 54px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding:4px;
+        gap: 4px;
+        background: #DFF0FF;
+      }
+      
+      .ClassroomsubItemTitle {
+        display: flex;
+        gap:10px;
+        align-items: center;
+        color: #1D92FF;
+        font-weight: 600;
+        font-size: 12px;
+      }
+
+              /*Skill Card*/
+  
+    .SkillcardSubItem {
+        width: 100%;
+        height: 54px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding:4px;
+        gap: 4px;
+        background: #F0E4FF;
+      }
+      
+      .SkillsubItemTitle {
+        display: flex;
+        gap:10px;
+        align-items: center;
+        color: #8455C1;
+        font-weight: 600;
+        font-size: 12px;
+      }
+
+                    /*Resolved Card*/
+  
+    .ResolvedcardSubItem {
+        width: 100%;
+        height: 54px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding:4px;
+        gap: 4px;
+        background: #CEF3E8;
+      }
+      
+      .ResolvedsubItemTitle {
+        display: flex;
+        gap:10px;
+        align-items: center;
+        color: #2BBA90;
+        font-weight: 600;
+        font-size: 12px;
+      }
+
+                    /*Unresolved Card*/
+  
+    .UnresolvedcardSubItem {
+        width: 100%;
+        height: 54px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding:4px;
+        gap: 4px;
+        background: #FCF1E1;
+      }
+      
+      .UnresolvedsubItemTitle {
+        display: flex;
+        gap:10px;
+        align-items: center;
+        color: #F79E1B;
+        font-weight: 600;
+        font-size: 12px;
+      }
+
+  
+
+  .subItemValue {
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+    padding-left:6px;
+  }
+
+
+  .navigateRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 58px; 
+    height: 58px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../../../Assets/Images/navigateBG.svg') no-repeat center center;
+    background-size: contain;
+
+  }
+
+  
+  .navigateRight img{
+    cursor: pointer;
+  }

@@ -1,0 +1,14 @@
+.aiToolsContainer {
+  font-family: Arial, sans-serif;
+}
+
+.aiToolsContainer h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.aiToolsContainer h3 {
+  font-size: 18px;
+  color: #333;
+}

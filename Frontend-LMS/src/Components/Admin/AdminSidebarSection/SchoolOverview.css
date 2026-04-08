@@ -1,0 +1,551 @@
+.school-page {
+  min-height: 100vh;
+  padding: 24px;
+  background: linear-gradient(180deg, #fffaf3 0%, #fff6e9 100%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #1f2937;
+}
+
+.school-hero,
+.school-card,
+.school-kpi,
+.school-error {
+  background: #fff;
+  border: 1px solid rgba(255, 153, 51, 0.12);
+  box-shadow: 0 18px 34px rgba(15, 23, 42, 0.05);
+}
+
+.school-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(320px, 1fr);
+  gap: 24px;
+  padding: 28px;
+  border-radius: 24px;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #fff1df 100%);
+}
+
+.school-badge,
+.school-link-btn,
+.school-toggle,
+.school-score small {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+
+.school-badge {
+  display: inline-flex;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 153, 51, 0.12);
+  color: #c2410c;
+  font-size: 12px;
+}
+
+.school-hero h1 {
+  margin: 14px 0 8px;
+  font-size: 32px;
+  color: #7c2d12;
+}
+
+.school-hero p,
+.school-card p,
+.school-feed-item p,
+.school-note p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.school-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.school-meta span,
+.school-pill,
+.school-upcoming,
+.school-note,
+.school-alert,
+.school-ai-actions div,
+.school-feed-item,
+.school-progress,
+.school-rows div,
+.school-stats div {
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.school-meta span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(255, 153, 51, 0.12);
+  font-size: 13px;
+}
+
+.school-hero-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.school-hero-panel label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.school-hero-panel label span {
+  font-size: 12px;
+  color: #9a3412;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.school-hero-panel select {
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 153, 51, 0.2);
+  background: #fff;
+  outline: none;
+}
+
+.school-score {
+  border-radius: 20px;
+  padding: 18px;
+  color: #fff;
+  background: linear-gradient(135deg, #ff9933 0%, #ff7a00 100%);
+}
+
+.school-score strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 38px;
+}
+
+.school-score p {
+  margin: 8px 0 0;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.school-actions,
+.school-kpis,
+.school-grid,
+.school-performance,
+.school-stats,
+.school-events,
+.school-ai {
+  display: grid;
+  gap: 16px;
+}
+
+.school-actions {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.school-actions button,
+.school-link-btn,
+.school-toggle button,
+.school-kpi {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.school-actions button,
+.school-link-btn {
+  border: none;
+  border-radius: 14px;
+  background: #fff;
+  color: #c2410c;
+  padding: 12px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.school-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.school-error {
+  border-radius: 16px;
+  padding: 12px 16px;
+  color: #b91c1c;
+  margin-bottom: 16px;
+  background: #fff1f2;
+}
+
+.school-kpis {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin-bottom: 20px;
+}
+
+.school-kpi {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  border-radius: 20px;
+  padding: 18px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.school-kpi:hover,
+.school-actions button:hover,
+.school-link-btn:hover {
+  transform: translateY(-2px);
+}
+
+.school-kpi-icon {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 153, 51, 0.12);
+  color: #ea580c;
+}
+
+.school-kpi span,
+.school-stats span,
+.school-rows span,
+.school-progress span,
+.school-feed-head span,
+.school-upcoming span {
+  display: block;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.school-kpi strong,
+.school-stats strong,
+.school-score strong,
+.school-rows strong {
+  color: #111827;
+}
+
+.school-kpi strong {
+  display: block;
+  margin: 6px 0 4px;
+  font-size: 28px;
+}
+
+.school-kpi small {
+  color: #6b7280;
+}
+
+.school-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.school-card {
+  border-radius: 22px;
+  padding: 22px;
+}
+
+.school-card-wide {
+  grid-column: span 2;
+}
+
+.school-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.school-head h3 {
+  margin: 0;
+  color: #7c2d12;
+}
+
+.school-head p {
+  margin: 6px 0 0;
+  font-size: 13px;
+}
+
+.school-toggle {
+  display: inline-flex;
+  gap: 6px;
+  padding: 4px;
+  border-radius: 999px;
+  background: #fff3e0;
+}
+
+.school-toggle button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: transparent;
+  color: #c2410c;
+  cursor: pointer;
+}
+
+.school-toggle button.active {
+  background: #ff9933;
+  color: #fff;
+}
+
+.school-performance,
+.school-events,
+.school-ai {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.school-chart,
+.school-list-card,
+.school-events > div {
+  border-radius: 18px;
+  padding: 16px;
+  background: #fffaf4;
+  border: 1px solid rgba(255, 153, 51, 0.1);
+}
+
+.school-bars {
+  height: 230px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(56px, 1fr));
+  gap: 12px;
+  align-items: end;
+  margin-top: 14px;
+}
+
+.school-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.school-bar-track {
+  width: 100%;
+  height: 180px;
+  padding: 8px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255, 153, 51, 0.08) 0%, rgba(255, 153, 51, 0.22) 100%);
+  display: flex;
+  align-items: flex-end;
+}
+
+.school-bar-fill,
+.school-progress-track div {
+  border-radius: 12px;
+  background: linear-gradient(180deg, #ffb04f 0%, #ff7a00 100%);
+}
+
+.school-bar-fill {
+  width: 100%;
+}
+
+.school-bar span {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.school-progress,
+.school-rows div,
+.school-upcoming,
+.school-feed-head {
+  display: grid;
+  gap: 12px;
+}
+
+.school-progress {
+  grid-template-columns: minmax(120px, 1fr) minmax(100px, 1.3fr) auto;
+  align-items: center;
+  background: #fff;
+  border: 1px solid rgba(255, 153, 51, 0.08);
+  margin-top: 10px;
+}
+
+.school-progress-track {
+  height: 10px;
+  border-radius: 999px;
+  background: #ffedd5;
+  overflow: hidden;
+}
+
+.school-progress-track div {
+  height: 100%;
+}
+
+.school-stats {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.school-stats div,
+.school-rows div {
+  background: #fffaf4;
+  border: 1px solid rgba(255, 153, 51, 0.1);
+}
+
+.school-stats div.warn,
+.school-alert.critical {
+  background: #fff1f2;
+}
+
+.school-stats strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 28px;
+}
+
+.school-note,
+.school-ai-summary,
+.school-ai-actions div {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.school-note,
+.school-ai-summary {
+  margin-top: 14px;
+  background: #fff7ed;
+  border: 1px solid rgba(255, 153, 51, 0.12);
+}
+
+.school-ai-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.school-ai-actions div {
+  background: #fff;
+  border: 1px solid rgba(255, 153, 51, 0.1);
+}
+
+.school-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.school-feed-head {
+  grid-template-columns: auto 1fr;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.school-calendar {
+  width: 100% !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+.school-calendar .react-calendar__navigation button {
+  color: #c2410c !important;
+  font-weight: 700;
+}
+
+.school-calendar .react-calendar__tile--active {
+  background: #ff9933 !important;
+  border-radius: 10px;
+}
+
+.school-pill,
+.school-upcoming {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: #fff;
+  border: 1px solid rgba(255, 153, 51, 0.08);
+  margin-top: 8px;
+}
+
+.school-pill {
+  justify-content: flex-start;
+}
+
+.school-alerts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.school-alert {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: #fff7ed;
+  border: 1px solid rgba(255, 153, 51, 0.12);
+}
+
+.school-alert.warning {
+  background: #fff7ed;
+}
+
+.school-empty {
+  margin-top: 10px;
+  border-radius: 14px;
+  padding: 14px;
+  background: #fffaf4;
+  border: 1px dashed rgba(255, 153, 51, 0.25);
+  color: #6b7280;
+  font-size: 13px;
+}
+
+@media (max-width: 1400px) {
+  .school-kpis {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1200px) {
+  .school-hero,
+  .school-grid,
+  .school-performance,
+  .school-events,
+  .school-ai {
+    grid-template-columns: 1fr;
+  }
+
+  .school-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .school-card-wide {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .school-page {
+    padding: 16px;
+  }
+
+  .school-meta,
+  .school-kpis,
+  .school-grid,
+  .school-stats,
+  .school-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .school-card-wide {
+    grid-column: span 1;
+  }
+
+  .school-head,
+  .school-progress {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .school-hero h1 {
+    font-size: 26px;
+  }
+}

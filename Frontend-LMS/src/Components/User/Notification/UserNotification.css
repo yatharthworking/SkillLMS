@@ -1,0 +1,134 @@
+.notificationMainPage{
+    height: 100vh;
+    width: 100%;
+    background: var(--Primary-50, #EEFBFD);
+}
+
+.notificationHomeSection{
+    width: 96%;
+    height: 90vh;
+}
+
+.notificationPageContainer{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.webinarDetailContentSection{
+    display: flex;
+    background-color: #ffffff;
+    height: 80vh;
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.notificationSection{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.notificationDate{
+    color: #555A74;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.notificationSubSextion{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.notificationSection1{
+    gap: 4px;
+    /* padding: 12px; */
+    /* border: 1px solid #EDEDF1; */
+    /* border-radius: 8px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.notificationTitle{
+    color: #23252E;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.notificationMessage{
+    color: #3B3E4E;
+    font-weight: 600;
+    font-size: 14px;
+    /* width: 97.5%; */
+}
+
+.addMarkasRead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #EDEDF1;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #EEFBFD; /* Default background color */
+    cursor: pointer;
+}
+
+.addMarkasRead.read {
+    background-color: #ffffff; /* White background color for read announcements */
+}
+
+.addMarkasRead1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #EDEDF1;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #ffffff; /* Default background color */
+    cursor: pointer;
+}
+
+
+.ellipseImg{
+    cursor: pointer;
+}
+
+.readMore {
+    color: #219EBC;
+    cursor: pointer;
+    /* text-decoration: underline; */
+}
+
+.loadMoreDiv{
+    background: #ffffff;
+    position: relative; 
+    left: 50%;
+    padding: 6px 12px;
+    border: 1px solid #219EBC;
+    color: #219EBC;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.notificationDetailHeaderSection{
+    width: 100%;
+}
+
+.markAllAsRead{
+    border: 1px solid #219EBC;
+    border-radius: 6px;
+    padding: 6px 12px;
+    color: #219EBC;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+ 
+ 

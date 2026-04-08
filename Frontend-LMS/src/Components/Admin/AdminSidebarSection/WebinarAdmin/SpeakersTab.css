@@ -1,0 +1,24 @@
+.speakersMainSection{
+    padding: 0px;
+}
+
+.addImg{
+    padding: 8px;
+    background-color: #219EBC;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cancelImg{
+    padding: 8px;
+    background-color: #FBDFE6;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.webinarTextField{
+    width: 500px;
+    border-radius: 6px;
+    padding: 5px;
+    border: 1px solid #898FA7
+}

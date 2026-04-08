@@ -1,0 +1,426 @@
+.recordedWebinarPage {
+    min-height: 100%;
+    padding: 28px;
+    background:
+        radial-gradient(circle at top right, rgba(255, 153, 51, 0.18), transparent 24%),
+        linear-gradient(180deg, #FFF9F0 0%, #FFF6E9 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.recordedWebinarHero,
+.recordedWebinarSummaryCard,
+.recordedWebinarToolbar,
+.recordedWebinarCard,
+.recordedWebinarEmptyState,
+.recordedPlayerDetailCard,
+.recordedTakeawayCard {
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(255, 153, 51, 0.1);
+    box-shadow: 0 18px 36px rgba(168, 101, 11, 0.08);
+}
+
+.recordedWebinarHero,
+.recordedWebinarToolbar,
+.recordedWebinarCard,
+.recordedWebinarEmptyState {
+    padding: 24px;
+}
+
+.recordedWebinarHero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 18px;
+    align-items: stretch;
+}
+
+.recordedWebinarEyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(255, 153, 51, 0.14);
+    color: #C2410C;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.recordedWebinarHeroText h1 {
+    margin: 18px 0 10px;
+    color: #1E293B;
+    font-size: clamp(30px, 3vw, 42px);
+    font-weight: 800;
+    line-height: 1.08;
+}
+
+.recordedWebinarHeroText p,
+.recordedWebinarEmptyState,
+.recordedPlayerDetailCard p {
+    margin: 0;
+    color: #5B6472;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.recordedWebinarSummaryGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.recordedWebinarSummaryCard {
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.recordedWebinarSummaryCard.focus {
+    background: linear-gradient(180deg, #FFF7EC 0%, #FFFFFF 100%);
+}
+
+.recordedWebinarSummaryCard span {
+    color: #64748B;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.recordedWebinarSummaryCard strong {
+    color: #1E293B;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.recordedWebinarToolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.recordedWebinarTabRow,
+.recordedWebinarFilters,
+.recordedWebinarMetaRow,
+.recordedWebinarActionRow,
+.recordedWebinarBadgeRow,
+.recordedWebinarProgressMeta,
+.recordedTakeawayList {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.recordedWebinarTab {
+    border: none;
+    border-radius: 18px;
+    padding: 11px 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #D5F3F8;
+    color: #0A7B95;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.recordedWebinarTab.active {
+    background: linear-gradient(135deg, #219EBC 0%, #1A7E98 100%);
+    color: #FFFFFF;
+}
+
+.recordedWebinarFilterField,
+.recordedWebinarSearchField {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 18px;
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    background: #FFFFFF;
+    min-height: 52px;
+    padding: 0 16px;
+}
+
+.recordedWebinarFilterField {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 170px;
+}
+
+.recordedWebinarFilterField span {
+    color: #64748B;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.recordedWebinarFilterField select,
+.recordedWebinarFilterField input,
+.recordedWebinarSearchField input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #334155;
+    width: 100%;
+    font-size: 14px;
+}
+
+.recordedWebinarSearchField {
+    flex: 1 1 260px;
+}
+
+.recordedWebinarSearchField svg {
+    color: #219EBC;
+}
+
+.recordedWebinarLoadingState,
+.recordedWebinarEmptyState {
+    min-height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+}
+
+.recordedWebinarGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 18px;
+}
+
+.recordedWebinarCard {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.recordedWebinarCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 34px rgba(168, 101, 11, 0.1);
+}
+
+.recordedWebinarThumbnailWrap {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.recordedWebinarThumbnail {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.recordedWebinarThumbnailOverlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.08) 0%, rgba(15, 23, 42, 0.46) 100%);
+    color: #FFFFFF;
+    opacity: 0;
+    transition: opacity 0.22s ease;
+}
+
+.recordedWebinarThumbnailWrap:hover .recordedWebinarThumbnailOverlay {
+    opacity: 1;
+}
+
+.recordedWebinarBadgeRow {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.recordedBadge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.recordedBadge.new {
+    background: rgba(255, 255, 255, 0.92);
+    color: #0F766E;
+}
+
+.recordedBadge.trending {
+    background: rgba(255, 153, 51, 0.92);
+    color: #FFFFFF;
+}
+
+.recordedWebinarCardBody {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.recordedWebinarMetaRow span,
+.recordedWebinarInfoLine,
+.recordedPlayerInsight {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #64748B;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.recordedWebinarCardBody h3 {
+    margin: 0;
+    color: #1E293B;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.recordedWebinarProgressBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.recordedWebinarProgressMeta span {
+    color: #64748B;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.recordedWebinarProgressMeta strong {
+    color: #1E293B;
+    font-size: 13px;
+    font-weight: 800;
+    margin-left: auto;
+}
+
+.recordedWebinarProgressTrack {
+    width: 100%;
+    height: 10px;
+    border-radius: 999px;
+    overflow: hidden;
+    background: #E9EEF3;
+}
+
+.recordedWebinarProgressFill {
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #219EBC 0%, #FF9933 100%);
+}
+
+.recordedPrimaryAction,
+.recordedSecondaryAction {
+    border: none;
+    border-radius: 14px;
+    padding: 13px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.recordedPrimaryAction {
+    background: linear-gradient(135deg, #FF9933 0%, #FF7A00 100%);
+    color: #FFFFFF;
+    box-shadow: 0 14px 28px rgba(255, 122, 0, 0.22);
+}
+
+.recordedSecondaryAction {
+    background: rgba(33, 158, 188, 0.1);
+    color: #177D96;
+    flex: 1;
+}
+
+.recordedPlayerLayout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 18px;
+    align-items: flex-start;
+}
+
+.recordedPlayerWrap {
+    border-radius: 18px;
+    overflow: hidden;
+    background: #0F172A;
+}
+
+.recordedPlayerVideo,
+.recordedPlayerFrame {
+    width: 100%;
+    min-height: 420px;
+    border: none;
+    display: block;
+}
+
+.recordedPlayerDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.recordedPlayerDetailCard,
+.recordedTakeawayCard {
+    padding: 18px;
+}
+
+.recordedPlayerDetailCard strong,
+.recordedTakeawayCard strong {
+    color: #1E293B;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.recordedTakeawayCard {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.recordedTakeawayList span {
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(255, 153, 51, 0.12);
+    color: #A8550F;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+@media (max-width: 1180px) {
+    .recordedWebinarHero,
+    .recordedPlayerLayout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .recordedWebinarPage {
+        padding: 20px 16px 28px;
+    }
+
+    .recordedWebinarSummaryGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .recordedPrimaryAction,
+    .recordedSecondaryAction {
+        width: 100%;
+    }
+
+    .recordedWebinarActionRow {
+        flex-direction: column;
+    }
+
+    .recordedPlayerVideo,
+    .recordedPlayerFrame {
+        min-height: 240px;
+    }
+}

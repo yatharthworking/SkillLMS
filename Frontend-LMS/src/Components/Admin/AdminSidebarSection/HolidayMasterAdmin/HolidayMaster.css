@@ -1,0 +1,446 @@
+.holidayMasterAdminMainPage{
+    padding: 12px; 
+}
+
+.holidayMaster_Section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.holidayMasterSubSection{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.holidayMasterHeaderText{
+    color:#23252E;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.holidayMasterSearchBox{
+    padding: 12px;
+    display: flex; 
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 26px;
+    border: 1px solid var(--Grey-400, #898FA7);
+    background: var(--White, #FFF);
+}
+
+.holidayMasterSearchInput{
+    width: 300px;
+    border: none;
+    outline: none;
+    color: var(--Grey-500, #6B728C);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.holidayMasterButtonDiv{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #219EBC;
+    height: 24px;
+    border: none;
+    padding: 6px 12px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.selectYaerDiv{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.calendarLabelText{
+    color: #3B3E4E;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.yearSelectionDiv{
+    padding: 12px;
+    width: 86px;
+    border: 1px solid #898FA7;
+    border-radius: 26px;
+}
+
+.holidayMasterTableContainer{
+    margin-top: 12px; 
+    background-color: #FFFFFF;
+    height: 70vh;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+.holidayMasterTableContainer::-webkit-scrollbar {
+    width: 6px; /* Adjust the width to make it thin */
+}
+
+.holidayMasterTableContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Color of the scrollbar thumb */
+}
+.holidayMasterTableContainer::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); /* Color of the scrollbar track */
+}
+
+.holidayMasterTableContainer::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Color of the scrollbar thumb on hover */
+}
+
+.holidayMasterMainSection{
+    padding: 12px;
+}
+
+.holidayMasterTable{
+    border-bottom: 1px solid #ECEFF5; 
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.holidayMasterTable th {
+    color: #898FA7;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17.5px; 
+    padding: 10px;
+    border-bottom: 1px solid #ECEFF5;
+    text-align: left;
+}
+
+.holidayMasterTable td {
+    padding: 6px 10px;
+    color: var(--Grey1, #132740);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/* .webinarTable tbody tr:hover {
+    background: #DBECFE;
+} */
+
+/* New CSS for alternating row colors */
+.holidayMasterTable tbody tr:nth-child(odd) {
+    background-color: #F6F7F9;
+}
+
+.holidayMasterTable tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* .holidayNameText{
+    color: #23252E;
+    font-weight: 600;
+    font-size: 14px;
+} */
+
+.holidayDialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.holidayHeader{
+    font-weight: 600;
+    color: #23252E;
+    font-size: 20px;
+}
+
+.holidayDialog-content {
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 12px;
+    width: 630px; /* Adjust as needed */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.holidayDialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.announcmentHeader{
+    color: #23252E;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.border2{
+    border: 1px solid #D5F3F8;
+    width: 100%; 
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.holidayDialog-close {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.holidayDialogBox{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 10px
+}
+
+.holidayDialog-body {
+    display: flex;
+    gap: 12px;
+}
+
+.inputFiled{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.selectOneMenuField{
+    width: 220px;
+    padding: 10px;
+    border: 1px solid #898FA7;
+    border-radius: 6px;
+}
+
+.holidayInputFieldText{
+    width: 375px;
+    padding: 10px;
+    border: 1px solid #898FA7;
+    border-radius: 6px;
+}
+
+.dateInputFieldText{
+    width: 170px;
+    padding: 10px;
+    border: 1px solid #898FA7;
+    border-radius: 6px;
+}
+.dialog-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 12px;
+}
+
+.cancelHoliday{
+    width: 110px;
+    border: 1px solid #219EBC;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: #219EBC;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.createHoliday{
+    width: 110px;
+    background: #219EBC;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.labelText{
+    color: #464A5E;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.holidayDelDialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.holidayDelHeader{
+    font-weight: 600;
+    color: #23252E;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.holidayDelHeader-content {
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 12px;
+    width: 400px; /* Adjust as needed */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.deleteButtonDiv{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    text-align: center;
+}
+
+.textDiv{
+    color: #3B3E4E;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+
+
+.importButtonGroup{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.importBtn{
+cursor: pointer;
+display: flex;
+height: 22px;
+min-width: 90px;
+padding: 6px 10px;
+justify-content: center;
+align-items: center;
+gap: 4px;
+border-radius: 6px;
+border: 2px solid var(--Primary-500, #219EBC);
+color: var(--Primary-500, #219EBC);
+text-align: center;
+
+/* 14px-bold */
+font-family: "Plus Jakarta Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 125%; /* 17.5px */
+}
+
+
+.importDialogBodyContainer{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.importDialogBody{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.importDialogSubHeader{
+    width: 100%;
+    color: var(--Grey-950, #23252E);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.importDialogSTxt{
+    width: 100%;
+    color: var(--Grey-600, #555A74);
+    font-family: "Plus Jakarta Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; /* 15px */
+}
+
+.importDialogDownloadTempelate{
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: var(--Primary-500, #219EBC);
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 17.5px */
+}
+
+.importDialogImportTempelate{
+    width: 92%;
+    cursor: pointer;
+    display: flex;
+    height: 28px;
+    padding: 12px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    align-self: stretch;
+    border-radius: 6px;
+    border: 1px dashed var(--Primary-500, #219EBC);
+    background: var(--Primary-100, #D5F3F8);
+    color: var(--Primary-500, #219EBC);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 17.5px */
+}
+
+.selectedFileBox{
+    display: flex;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 6px;
+    background: var(--Grey-100, #EDEDF1);
+}
+
+.selectedFileBoxTxt{
+    color: var(--Grey-800, #3B3E4E);
+    font-family: "Plus Jakarta Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

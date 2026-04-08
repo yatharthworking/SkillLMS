@@ -1,0 +1,47 @@
+.userProfilePage{
+    height: 100vh;
+    width: 100%;
+    background: var(--Primary-50, #EEFBFD);   
+}
+
+.userProfileContainer{
+    width: 100%;
+    height: 90vh;
+}
+
+.userProfileHeaderRow{
+    width: 98%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.userProfileContentRow{
+    width: 98%;
+    display: flex;
+    height: 87%;
+    padding: 0% 1% 1% 1%;
+    gap:1%;
+}
+
+.userProfileHeaderTxt{
+    color: #000;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.userProfileSidebarSection
+{
+    height: 100%;
+    width: 20%;
+}
+
+.userProfileContentSection
+{
+    height: 100%;
+    width: 80%;
+}

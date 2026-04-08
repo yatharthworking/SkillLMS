@@ -1,0 +1,67 @@
+.userMyClassPage{
+    width: 98%;
+    height: 96%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--White, #FFF);
+    box-shadow: 4px 4px 12px 0px rgba(33, 158, 188, 0.12);
+}
+
+.userClassHeading{
+    color: #23252E;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    border-left: 4px solid #FFB703;
+    padding-left: 10px;
+}
+
+.userClassContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.classContainer{
+    background-color: #EEFBFD;
+    width: 50%;
+    height: 100px;
+    padding: 12px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.courseName{
+    color: #219EBC;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.courseDate{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.date{
+    color: #6B728C;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.instituteName{
+    color:#23252E;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}

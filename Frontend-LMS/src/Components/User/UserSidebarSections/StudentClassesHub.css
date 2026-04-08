@@ -1,0 +1,103 @@
+.studentClassesHub {
+    min-height: 100%;
+    background: linear-gradient(180deg, #FFF9F0 0%, #FFF6E9 100%);
+}
+
+.studentClassesHubHeader {
+    padding: 28px 28px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.studentClassesHubEyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(255, 153, 51, 0.14);
+    color: #C2410C;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.studentClassesHubBackButton {
+    margin-bottom: 14px;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 16px;
+    background: rgba(33, 158, 188, 0.1);
+    color: #177D96;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.studentClassesHubHeader h1 {
+    margin: 14px 0 8px;
+    color: #1E293B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: clamp(28px, 3vw, 38px);
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.studentClassesHubHeader p {
+    margin: 0;
+    max-width: 620px;
+    color: #5B6472;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.studentClassesHubTabs {
+    display: inline-flex;
+    gap: 8px;
+    padding: 6px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 14px 28px rgba(168, 101, 11, 0.08);
+}
+
+.studentClassesHubTab {
+    border: none;
+    border-radius: 14px;
+    padding: 12px 16px;
+    background: transparent;
+    color: #475569;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.studentClassesHubTab.active {
+    background: linear-gradient(135deg, #FF9933 0%, #FF7A00 100%);
+    color: #FFFFFF;
+}
+
+.studentClassesHubBody {
+    min-height: calc(100% - 140px);
+}
+
+@media (max-width: 768px) {
+    .studentClassesHubHeader {
+        padding: 20px 16px 16px;
+    }
+
+    .studentClassesHubTabs {
+        width: 100%;
+    }
+
+    .studentClassesHubTab {
+        flex: 1;
+    }
+}

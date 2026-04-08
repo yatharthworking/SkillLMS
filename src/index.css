@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 200 30% 98%;
+    --foreground: 220 20% 15%;
+
+    --card: 40 30% 97%;
+    --card-foreground: 220 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
+
+    --primary: 199 89% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 152 55% 38%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 200 20% 94%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 25 95% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 20% 88%;
+    --input: 200 20% 88%;
+    --ring: 199 89% 48%;
+
+    --radius: 0.75rem;
+
+    /* Custom travel tokens */
+    --sky: 199 89% 48%;
+    --sky-light: 199 89% 92%;
+    --forest: 152 55% 38%;
+    --forest-light: 152 40% 90%;
+    --sunset: 25 95% 58%;
+    --sunset-light: 30 90% 92%;
+    --mountain: 220 10% 46%;
+    --sand: 38 44% 90%;
+    --sand-dark: 38 30% 70%;
+
+    --font-display: 'Caveat', cursive;
+    --font-body: 'Nunito', sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 200 20% 95%;
+    --card: 220 18% 14%;
+    --card-foreground: 200 20% 95%;
+    --popover: 220 18% 14%;
+    --popover-foreground: 200 20% 95%;
+    --primary: 199 89% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 152 55% 38%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 15% 20%;
+    --muted-foreground: 200 15% 60%;
+    --accent: 25 95% 58%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 15% 22%;
+    --input: 220 15% 22%;
+    --ring: 199 89% 48%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-body);
+  }
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .travel-card {
+    @apply bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500;
+    transform: perspective(1000px);
+  }
+  .travel-card:hover {
+    transform: perspective(1000px) translateY(-8px) rotateX(2deg);
+  }
+  .glass-panel {
+    @apply bg-background/70 backdrop-blur-xl border border-border/50 rounded-2xl;
+  }
+  .text-gradient-sky {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--sky)), hsl(var(--forest)));
+  }
+  .text-gradient-sunset {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--sunset)), hsl(var(--sky)));
+  }
+  .bg-gradient-sky {
+    background: linear-gradient(180deg, hsl(var(--sky-light)), hsl(var(--background)));
+  }
+  .bg-gradient-sunset {
+    background: linear-gradient(135deg, hsl(var(--sunset-light)), hsl(var(--sand)));
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  .animate-float-slow {
+    animation: float 10s ease-in-out infinite;
+  }
+  .animate-drift {
+    animation: drift 20s linear infinite;
+  }
+  .animate-drift-slow {
+    animation: drift 35s linear infinite;
+  }
+  .animate-sway {
+    animation: sway 4s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes drift {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(calc(100vw + 100%)); }
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+@keyframes drawPath {
+  to { stroke-dashoffset: 0; }
+}

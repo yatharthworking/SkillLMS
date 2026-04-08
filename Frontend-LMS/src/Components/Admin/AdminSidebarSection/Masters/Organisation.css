@@ -1,0 +1,217 @@
+.ContentContainerOrg{
+    display: flex;
+    background-color: #fff;
+    box-shadow: 4px 4px 12px 0px #219EBC1F;
+    padding: 12px;
+    border-radius: 10px;
+    gap: 24px;
+}
+
+.OrgImageContainer {
+    position: relative;
+    display: inline-block;
+    object-fit: contain;
+  }
+  
+  .EditIcon {
+    padding: 6px;
+    position: absolute;
+    top: -11px;
+    right: -11px;
+    width: 21px;
+    height: auto;
+    cursor: pointer;
+    /* z-index: 1; */
+    background: white;
+    border-radius: 50%;
+    border: 1px solid #219EBC
+  }
+  
+
+.OrgNameBox{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 45%;
+}
+
+.OrgContactBox{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 16%;
+}
+
+.OrgNameText{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17.5px;
+}
+
+.InputOrgName{
+    border-radius: 5px;
+    border: 1px solid var(--Oslo-Gray-300, #8794A9);
+    background: var(--White, #f6f8fc);
+    padding: 6px 10px;
+    align-items: center;
+    gap: 8px;
+    height: 28px;
+    font-size: 20px;
+}
+
+.UpdateBtn{
+    border-radius: 6px;
+    color: #219EBC;
+    padding: 10px;
+    border: 1px solid #219EBC;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.UpdateBtn:hover {
+    background-color: #e9f7ff;
+  }
+
+  .branchDialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.branchDialog-content {
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 12px;
+    width: 918px; /* Adjust as needed */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.brancgDialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.branchDialog-close {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.branchDialogBox{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 10px
+}
+
+.branchDialog-body {
+    display: flex;
+    gap: 12px;
+}
+
+.branchInputFiled{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.branchLabelText{
+    color: #464A5E;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.branchSelectOneMenuField{
+    width: 220px;
+    padding: 10px;
+    border: 1px solid #898FA7;
+    border-radius: 6px;
+}
+
+.branchContactSelectOneMenuField{
+    width: 65px;
+    padding: 10px;
+    border: 1px solid #898FA7;
+    /* border-radius: 6px; */
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.branchInputFieldText{
+    width: 430px;
+    padding: 10px;
+    border: 1px solid #898FA7;
+    border-radius: 6px;
+}
+
+.branchTextArea{
+    padding: 10px;
+    border: 1px solid #898FA7;
+    border-radius: 6px;
+}
+
+.branchDialog-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 12px;
+}
+
+.cancelBranch{
+    width: 110px;
+    border: 1px solid #219EBC;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: #219EBC;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.createBranch{
+    width: 110px;
+    background: #219EBC;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.branchInputField{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #898FA7;
+    border-radius: 6px;
+}
+
+.branchContactInputField{
+    width: 135px;
+    padding: 10px;
+    border: 1px solid #898FA7;
+    /* border-radius: 6px; */
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.branchContactBox{
+    display: flex;
+}
+
+

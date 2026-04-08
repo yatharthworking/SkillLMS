@@ -1,0 +1,284 @@
+.ConfirmationPage{
+    min-height: 100vh;
+    width: 100%;
+    background: var(--Primary-50, #EEFBFD);
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.ConfirmationPage.loadingState{
+    align-items: center;
+}
+
+.resultShell{
+    width: min(1100px, 100%);
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 18px 40px rgba(33, 158, 188, 0.08);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.resultShell.empty{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 360px;
+}
+
+.resultHero{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background: linear-gradient(135deg, #EEFBFD 0%, #FFF7E6 100%);
+    border-radius: 22px;
+    padding: 20px;
+}
+
+.resultIllustration{
+    width: min(280px, 34%);
+    height: auto;
+}
+
+.resultHeroContent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resultTag{
+    width: fit-content;
+    background: #D8F5FB;
+    color: #176B87;
+    border-radius: 999px;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.resultTitle{
+    color: #23252E;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.resultSubtitle{
+    color: #6B728C;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.scoreGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+.scoreCard{
+    border: 1px solid #E8EDF4;
+    border-radius: 18px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: #FAFCFF;
+}
+
+.scoreCard span{
+    color: #6B728C;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.scoreCard strong{
+    color: #23252E;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.scoreCard.primary{
+    background: #F2FBFD;
+    border-color: #BFE9F2;
+}
+
+.scoreCard.success{
+    background: #EAF8EE;
+    border-color: #BEE2C8;
+}
+
+.scoreCard.danger{
+    background: #FFF0EC;
+    border-color: #F3C1B1;
+}
+
+.resultReviewSection{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sectionHeading{
+    color: #23252E;
+    font-size: 22px;
+    font-weight: 700;
+    border-left: 4px solid #FFB703;
+    padding-left: 10px;
+}
+
+.resultQuestionList{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.resultQuestionCard{
+    border: 1px solid #E8EDF4;
+    border-radius: 18px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background: #fff;
+}
+
+.resultQuestionCard.correct{
+    border-color: #BEE2C8;
+    background: #F6FCF8;
+}
+
+.resultQuestionCard.incorrect{
+    border-color: #F3C1B1;
+    background: #FFF9F7;
+}
+
+.resultQuestionCard.unanswered{
+    border-color: #E6D8B0;
+    background: #FFFDF6;
+}
+
+.resultQuestionHeader{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.resultQuestionHeader strong{
+    color: #23252E;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.resultQuestionHeader span{
+    min-width: max-content;
+    padding: 8px 10px;
+    border-radius: 999px;
+    background: #F2FBFD;
+    color: #176B87;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.resultOptions{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resultOption{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+    border: 1px solid #E8EDF4;
+    border-radius: 14px;
+    padding: 14px;
+    color: #3B3E4E;
+    font-weight: 500;
+}
+
+.resultOption.correct{
+    border-color: #89C89D;
+    background: #EAF8EE;
+}
+
+.resultOption.selected{
+    box-shadow: inset 0 0 0 2px #FFB703;
+}
+
+.optionState{
+    color: #6B728C;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.resultActions{
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.SecondaryButton,
+.SubmitBtn{
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+}
+
+.SubmitBtn{
+    background: #219EBC;
+    color: #fff;
+}
+
+.SecondaryButton{
+    background: #fff;
+    color: #219EBC;
+    border: 1px solid #219EBC;
+}
+
+@media (max-width: 900px){
+    .resultHero{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .resultHeroContent{
+        align-items: center;
+    }
+
+    .scoreGrid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px){
+    .ConfirmationPage{
+        padding: 12px;
+    }
+
+    .resultShell{
+        padding: 18px;
+    }
+
+    .scoreGrid{
+        grid-template-columns: 1fr;
+    }
+
+    .resultQuestionHeader,
+    .resultOption,
+    .resultActions{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .resultIllustration{
+        width: 100%;
+    }
+}

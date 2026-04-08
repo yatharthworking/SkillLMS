@@ -1,0 +1,477 @@
+.resultsPerformancePage {
+    min-height: 100%;
+    padding: 28px;
+    background:
+        radial-gradient(circle at top right, rgba(33, 158, 188, 0.16), transparent 22%),
+        linear-gradient(180deg, #FFF9F0 0%, #FFF6E9 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.resultsPerformancePage.loadingState {
+    align-items: center;
+    justify-content: center;
+}
+
+.resultsHeroCard,
+.resultsSummaryCard,
+.resultsPanelCard,
+.subjectAnalysisCard,
+.insightCard {
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(255, 153, 51, 0.1);
+    box-shadow: 0 18px 36px rgba(168, 101, 11, 0.08);
+}
+
+.resultsHeroCard {
+    padding: 24px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.resultsEyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(33, 158, 188, 0.12);
+    color: #0A6F87;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.resultsHeroCard h1 {
+    margin: 16px 0 10px;
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 800;
+    color: #1E293B;
+}
+
+.resultsHeroCard p,
+.resultsPanelHeader p,
+.insightCard p,
+.subjectAnalysisMeta,
+.resultsEmptyState {
+    margin: 0;
+    color: #5B6472;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.resultsDownloadButton {
+    border: none;
+    border-radius: 16px;
+    padding: 12px 16px;
+    background: linear-gradient(135deg, #FF9933 0%, #FF7A00 100%);
+    color: #FFFFFF;
+    box-shadow: 0 16px 30px rgba(255, 122, 0, 0.18);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.resultsSummaryGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.resultsSummaryCard {
+    position: relative;
+    overflow: hidden;
+    padding: 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.resultsSummaryCard:hover,
+.resultsPanelCard:hover,
+.subjectAnalysisCard:hover,
+.resultsTable tbody tr:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 34px rgba(168, 101, 11, 0.1);
+}
+
+.resultsSummaryIcon {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(33, 158, 188, 0.18), rgba(255, 188, 99, 0.16));
+    color: #0D6E89;
+    flex-shrink: 0;
+}
+
+.resultsSummaryBody {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.resultsSummaryBody span {
+    color: #6B728C;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.resultsSummaryBody strong {
+    color: #23252E;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.resultsSummaryCard.teal::before,
+.resultsSummaryCard.orange::before,
+.resultsSummaryCard.blue::before,
+.resultsSummaryCard.gold::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.55;
+    pointer-events: none;
+}
+
+.resultsSummaryCard.teal::before {
+    background: radial-gradient(circle at top right, rgba(122, 213, 230, 0.34), transparent 48%);
+}
+
+.resultsSummaryCard.orange::before {
+    background: radial-gradient(circle at top right, rgba(255, 179, 71, 0.26), transparent 48%);
+}
+
+.resultsSummaryCard.blue::before {
+    background: radial-gradient(circle at top right, rgba(84, 167, 255, 0.22), transparent 48%);
+}
+
+.resultsSummaryCard.gold::before {
+    background: radial-gradient(circle at top right, rgba(255, 208, 92, 0.24), transparent 48%);
+}
+
+.resultsAnalyticsGrid,
+.resultsLowerGrid {
+    display: grid;
+    gap: 16px;
+}
+
+.resultsAnalyticsGrid {
+    grid-template-columns: 1.3fr 1fr;
+}
+
+.resultsLowerGrid {
+    grid-template-columns: 1.35fr 0.9fr;
+}
+
+.resultsRightRail {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.resultsPanelCard {
+    padding: 22px;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.resultsPanelHeader {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.resultsPanelTitle {
+    color: #1E293B;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.resultsPanelChip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 14px;
+    background: #FFF7EC;
+    color: #F48C06;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.trendChartWrap {
+    min-height: 260px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #ffffff 0%, #fffaf1 100%);
+    border: 1px solid rgba(33, 158, 188, 0.08);
+    padding: 14px;
+}
+
+.trendChartSvg {
+    width: 100%;
+    height: 240px;
+}
+
+.trendGridLine {
+    stroke: rgba(148, 163, 184, 0.18);
+    stroke-width: 1;
+}
+
+.trendLinePath {
+    fill: none;
+    stroke: url(#scoreTrendStroke);
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.trendPoint {
+    fill: #FF9933;
+    stroke: #ffffff;
+    stroke-width: 3;
+}
+
+.trendAxisLabel {
+    fill: #667085;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.subjectBarsList,
+.subjectAnalysisList,
+.insightList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.subjectBarRow {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.subjectBarLabels {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    color: #1E293B;
+}
+
+.subjectBarLabels strong {
+    font-size: 15px;
+}
+
+.subjectBarLabels span {
+    color: #667085;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.subjectBarTrack {
+    width: 100%;
+    height: 12px;
+    border-radius: 999px;
+    overflow: hidden;
+    background: #E9EEF3;
+}
+
+.subjectBarTrack.slim {
+    height: 10px;
+}
+
+.subjectBarFill {
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #219EBC 0%, #FF9F45 100%);
+    transition: width 0.5s ease;
+}
+
+.resultsFiltersRow {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.resultsFiltersRow select {
+    min-width: 160px;
+    border-radius: 14px;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    background: rgba(255, 255, 255, 0.94);
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+    outline: none;
+}
+
+.resultsTableWrap {
+    overflow-x: auto;
+}
+
+.resultsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.resultsTable thead th {
+    text-align: left;
+    padding: 14px 12px;
+    color: #667085;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.resultsTable tbody tr {
+    transition: transform 0.18s ease, background 0.18s ease;
+}
+
+.resultsTable tbody td {
+    padding: 14px 12px;
+    color: #23252E;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.resultsStatusBadge,
+.subjectStrengthBadge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.resultsStatusBadge.pass,
+.subjectStrengthBadge.strong {
+    background: rgba(34, 197, 94, 0.16);
+    color: #15803D;
+}
+
+.resultsStatusBadge.fail,
+.subjectStrengthBadge.weak {
+    background: rgba(239, 68, 68, 0.16);
+    color: #B91C1C;
+}
+
+.subjectStrengthBadge.average {
+    background: rgba(255, 183, 3, 0.18);
+    color: #B45309;
+}
+
+.subjectAnalysisCard {
+    padding: 16px;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.subjectAnalysisTop {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.subjectAnalysisTop strong {
+    color: #1E293B;
+    font-size: 16px;
+}
+
+.subjectAnalysisMeta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.insightCard {
+    padding: 16px;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.insightCard strong {
+    color: #1E293B;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.insightCard.trend-up,
+.insightCard.gain {
+    background: linear-gradient(180deg, #F2FBFD 0%, #FFFFFF 100%);
+}
+
+.insightCard.focus,
+.insightCard.alert {
+    background: linear-gradient(180deg, #FFF7EC 0%, #FFFFFF 100%);
+}
+
+.resultsEmptyState {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 160px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.76);
+    border: 1px dashed rgba(255, 153, 51, 0.14);
+    text-align: center;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.resultsEmptyState.compact {
+    min-height: 80px;
+}
+
+@media (max-width: 1180px) {
+    .resultsSummaryGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .resultsAnalyticsGrid,
+    .resultsLowerGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .resultsPerformancePage {
+        padding: 20px 16px 28px;
+    }
+
+    .resultsHeroCard,
+    .resultsPanelHeader,
+    .subjectAnalysisTop {
+        flex-direction: column;
+    }
+
+    .resultsSummaryGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .resultsFiltersRow select,
+    .resultsDownloadButton {
+        width: 100%;
+    }
+}

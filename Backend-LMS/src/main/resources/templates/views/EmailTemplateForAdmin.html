@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Email Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1.5px solid #dddddd;
+        }
+        .email-footer {
+            text-align: center;
+            background-color: #007bff;
+            padding: 7px;
+        }
+        .email-body {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .email-body p {
+            margin: 10px 0;
+        }
+        .email-footer p {
+            font-size: 13px;
+            color: #ffffff;
+        }
+        .signature {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="email-container">
+    <div class="email-body">
+        <p th:if="${email.messageHeader != null}">
+            <b th:text="'Hello, ' + ${email.messageHeader}"></b>
+        </p>
+        <p th:unless="${email.messageHeader != null}">
+            <b th:unless="${email.messageHeader != null}">Dear Sir/Ma'am,</b>
+        </p>
+        <p th:if="${email.messageBodyP1 != null}" th:utext="${email.messageBodyP1}"></p>
+        <p th:if="${email.messageBodyP2 != null}" th:utext="${email.messageBodyP2}"></p>
+        <p th:if="${email.messageBodyP3 != null}" th:utext="${email.messageBodyP3}"></p>
+        <div class="signature">
+            <p>Thanks and Regards,</p>
+            <p th:if="${email.messageFooter != null}" th:text="${email.messageFooter}"></p>
+            <p th:unless="${email.messageFooter != null}">Valued User</p>
+        </div>
+    </div>
+    <div class="email-footer">
+        <p>&copy; 2024 SkillLMS. All Rights Reserved.</p>
+    </div>
+</div>
+</body>
+</html>

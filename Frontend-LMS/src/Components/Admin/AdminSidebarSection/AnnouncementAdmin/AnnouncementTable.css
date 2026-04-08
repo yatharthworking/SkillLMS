@@ -1,0 +1,362 @@
+.announcementAdminMainPage{
+    padding: 12px; 
+}
+
+.announcement_Section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.announcementSubSection{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.announcementHeaderText{
+    color:#23252E;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.announcmentSearchBox{
+    padding: 12px;
+    display: flex; 
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 26px;
+    border: 1px solid var(--Grey-400, #898FA7);
+    background: var(--White, #FFF);
+}
+
+.announcmentSearchInput{
+    width: 300px;
+    border: none;
+    outline: none;
+    color: var(--Grey-500, #6B728C);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.announcmentButtonDiv{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #219EBC;
+    height: 24px;
+    border: none;
+    padding: 6px 12px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.announcmentTableContainer{
+    margin-top: 12px; 
+    background-color: #FFFFFF;
+    height: 70vh;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+.announcmentTableContainer::-webkit-scrollbar {
+    width: 6px; /* Adjust the width to make it thin */
+}
+
+.announcmentTableContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Color of the scrollbar thumb */
+}
+.announcmentTableContainer::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); /* Color of the scrollbar track */
+}
+
+.announcmentTableContainer::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Color of the scrollbar thumb on hover */
+}
+
+.announcmentMainSection{
+    padding: 12px;
+}
+
+.announcmentTable{
+    border-bottom: 1px solid #ECEFF5; 
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.announcmentTable th {
+    color: #898FA7;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17.5px; 
+    padding: 10px;
+    border-bottom: 1px solid #ECEFF5;
+    text-align: left;
+}
+
+.announcmentTable td {
+    padding: 6px 10px;
+    color: var(--Grey1, #132740);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/* .webinarTable tbody tr:hover {
+    background: #DBECFE;
+} */
+
+/* New CSS for alternating row colors */
+.announcmentTable tbody tr:nth-child(odd) {
+    background-color: #F6F7F9;
+}
+
+.announcmentTable tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.truncate-text1 {
+    max-width: 300px; /* Adjust the maximum width as per your layout */
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+
+.announcmentName{
+    color: #23252E;
+    font-weight: 600;
+    font-size: 14px;
+    padding-bottom: 4px;
+}
+
+/* Add these styles to your AnnouncementTable.css file */
+
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.dialog-content {
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 12px;
+    width: 600px; /* Adjust as needed */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dialog-contentLong {
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 12px;
+    width: auto; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.announcmentHeader{
+    color: #23252E;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.border2{
+    border: 1px solid #D5F3F8;
+    width: 100%; 
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.dialog-close {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dialogBox{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 10px
+}
+
+.dialog-body {
+    display: flex;
+    gap: 12px;
+}
+.dialog-body1 {
+    display: flex;
+    gap: 12px;
+    overflow-y: auto;
+    max-height: 400px;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.inputFiled{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.selectOneMenuField{
+    width: 220px;
+    padding: 10px;
+    border: 1px solid #898FA7;
+    border-radius: 6px;
+}
+
+.inputFieldText{
+    width: 350px;
+    padding: 10px;
+    border: 1px solid #898FA7;
+    border-radius: 6px;
+}
+
+.textArea{
+    padding: 10px;
+    border: 1px solid #898FA7;
+    border-radius: 6px;
+}
+
+.dialog-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 12px;
+}
+
+.cancelAnnouncment{
+    width: 110px;
+    border: 1px solid #219EBC;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: #219EBC;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.createAnnouncment{
+    width: 110px;
+    background: #219EBC;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.labelText{
+    color: #464A5E;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.mandatoryFiled{
+    color: #E72755;
+    font-weight: 400;
+}
+
+/* AnnouncementTable.css */
+
+.announcementSearchInput {
+    /* Other styles */
+    width: 300px;
+    border: none;
+    outline: none; 
+    border-radius: 4px; 
+    transition: background-color 0.3s;
+}
+
+.announcementSearchInput:focus {
+    border: none;
+    outline: none; 
+}
+
+.loader-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.announcment-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.announcmentpopup {
+    background-color: white;
+    padding: 20px;
+    max-width: 50%;
+    max-height: 80%;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.announcmentpopup-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.announcmentpopup-content {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.announcmentclose {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #aaa;
+}
+
+
+
+
+

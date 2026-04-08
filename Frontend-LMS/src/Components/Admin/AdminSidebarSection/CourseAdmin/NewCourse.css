@@ -1,0 +1,253 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    width: 100%;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    /* width: 600px; */
+    position: relative;
+}
+
+.modal-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 4px;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-form {
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    gap: 15px;
+}
+
+.upload-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.inputHeaderText {
+    color: #23252E;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.mandatoryField {
+    color: red;
+    margin-left: 2px;
+}
+
+.courseDetailsField {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.courseInputBox {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #898FA7;
+    background: #FFF;
+}
+
+.priceField {
+    display: flex;
+}
+
+.student-limit-options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.course-type-options {
+    display: flex;
+    gap: 12px;
+}
+
+.courseTypeLabel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #EDEDF1;
+    background-color: transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.courseTypeLabel img{
+    
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.courseTypeDetails{
+    margin-left: 30px;
+}
+
+
+.selectedCourseType {
+    border-color: #219EBC;
+    background-color: #D5F3F8;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.cancel-button,
+.create-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.cancel-button {
+    background: #fff;
+    border: 1px solid #219EBC;
+    color: #219EBC;
+    
+}
+
+.create-button {
+    background: #219EBC;
+    color: #fff;
+    
+}
+
+.create-button:disabled{
+    background: lightgrey;
+    color: white;
+    opacity: 0.5;
+    cursor: not-allowed;  
+    border:lightgrey;
+}
+
+.rightContentCourse{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 12px;
+
+}
+
+.courseName{
+    display: flex;
+    width: 100%;
+    gap: 12px;
+}
+
+.createdBy{
+    display: flex;
+    gap: 12px;
+
+
+}
+
+.courseTypeText{
+    color: #23252E;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.courseTypeDesc{
+    margin-top: 6px;
+    color:#6B728C;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.deleteImage{
+    padding: 8px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #219EBC;
+}

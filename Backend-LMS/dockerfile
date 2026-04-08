@@ -1,0 +1,38 @@
+# Use an official OpenJDK runtime as a parent image
+FROM openjdk:22-jdk
+
+# Set the current working directory inside the Docker image
+WORKDIR /app
+
+ 
+# Copy the Spring Boot application JAR file to the container
+COPY target . .
+
+
+# ENV SERVER_PORT=8901 \
+#     CONTEXT_PATH=/soul \
+#     DB_URL=jdbc:postgresql://172.188.28.14:5432/lmsdb \
+#     DB_USERNAME=lms \
+#     DB_PASSWORD='$#lmsdb@123@' \
+#     JWT_SECRETKEY=PtEVtEFIknIhoXzJ3BViqEIAO/S7vyTi+o/cBhsggX9OpRCJMkEgoygVHzLvlu2Q0Y/p26Th7sk6ASlmDfbgXw== \
+
+
+# Set environment variables
+ENV SERVER_PORT=8901 \
+    CONTEXT_PATH=/soul \
+    DB_URL=jdbc:oracle:thin:@13.126.157.180:15024:MAROGYAM \
+    DB_USERNAME=emrmaster \
+    DB_PASSWORD=emrmaster123 \
+    JWT_SECRETKEY=PtEVtEFIknIhoXzJ3BViqEIAO/S7vyTi+o/cBhsggX9OpRCJMkEgoygVHzLvlu2Q0Y/p26Th7sk6ASlmDfbgXw== \
+
+# Expose the port your application listens on
+EXPOSE=8901
+
+# Define the command that should be executed when the Docker container starts
+ENTRYPOINT ["java", "-jar", "lms-0.0.1-SNAPSHOT.jar"]
+CMD ["--server.port=${SERVER_PORT}", \
+     "--server.servlet.context-path=${CONTEXT_PATH}", \
+     "--spring.datasource.url=${DB_URL}", \
+     "--spring.datasource.username=${DB_USERNAME}", \
+     "--spring.datasource.password=${DB_PASSWORD}", \
+     "--jwt.secretKey=${JWT_SECRETKEY}"]

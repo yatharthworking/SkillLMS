@@ -1,0 +1,287 @@
+.userSidebarShell {
+    width: 290px;
+    min-width: 290px;
+    height: calc(100vh - 76px);
+    position: sticky;
+    top: 76px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px 16px;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 246, 233, 0.96) 100%);
+    border-right: 1px solid rgba(255, 153, 51, 0.12);
+    box-shadow: 0 18px 40px rgba(148, 88, 10, 0.08);
+    transition: width 0.28s ease, min-width 0.28s ease, padding 0.28s ease;
+    overflow-y: auto;
+    z-index: 2;
+}
+
+.userSidebarShell.expanded {
+    width: 290px;
+    min-width: 290px;
+}
+
+.userSidebarShell.collapsed {
+    width: 88px;
+    min-width: 88px;
+    padding: 20px 12px;
+}
+
+.userSidebarShell::-webkit-scrollbar {
+    width: 6px;
+}
+
+.userSidebarShell::-webkit-scrollbar-thumb {
+    background: rgba(255, 153, 51, 0.28);
+    border-radius: 999px;
+}
+
+.userSidebarNav {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    flex: 1;
+}
+
+.userSidebarGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.userSidebarGroupTitle {
+    padding: 0 10px;
+    color: #9A7B5F;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.userSidebarGroupItems {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.userSidebarItem {
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border-radius: 16px;
+    background: transparent;
+    color: #475569;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.userSidebarItem:hover {
+    background: rgba(255, 153, 51, 0.12);
+    color: #C2410C;
+    transform: translateX(2px);
+}
+
+.userSidebarItem.active {
+    background: linear-gradient(135deg, #FF9933 0%, #FF7A00 100%);
+    color: #FFFFFF;
+    box-shadow: 0 16px 28px rgba(255, 122, 0, 0.24);
+}
+
+.userSidebarItemIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 153, 51, 0.12);
+    flex-shrink: 0;
+}
+
+.userSidebarItem.active .userSidebarItemIcon {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.userSidebarItemLabel {
+    flex: 1;
+    text-align: left;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.userSidebarItemBadge {
+    min-width: 22px;
+    height: 22px;
+    padding: 0 7px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.24);
+    color: inherit;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.userSidebarShell.collapsed .userSidebarItem {
+    justify-content: center;
+    padding: 12px 0;
+}
+
+.userSidebarShell.collapsed .userSidebarItemIcon {
+    width: 44px;
+    height: 44px;
+}
+
+.userSidebarFooter {
+    padding-top: 6px;
+}
+
+.userSidebarContinue {
+    width: 100%;
+    border: none;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 16px;
+    background: #1E293B;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 16px 30px rgba(30, 41, 59, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.userSidebarContinue:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 20px 34px rgba(30, 41, 59, 0.24);
+}
+
+.userSidebarContinue.iconOnly {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 14px;
+}
+
+@media (max-width: 1100px) {
+    .userSidebarShell {
+        width: 88px;
+        min-width: 88px;
+        padding: 24px 12px;
+    }
+
+    .userSidebarShell:not(.collapsed) {
+        width: 270px;
+        min-width: 270px;
+        padding: 24px 16px;
+    }
+}
+
+@media (min-width: 769px) {
+    .studentMobileToggleBtn,
+    .studentMobileOverlay {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .userSidebarShell {
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 280px !important;
+        min-width: 280px !important;
+        height: calc(100vh - 68px);
+        top: 68px;
+        border-radius: 0 22px 22px 0;
+        transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 1000;
+    }
+
+    .userSidebarShell.mobileOpen {
+        left: 0;
+    }
+
+    .userSidebarShell.collapsed {
+        width: 280px !important;
+        min-width: 280px !important;
+        padding: 24px 16px;
+    }
+
+    .userSidebarShell.collapsed .userSidebarItem {
+        justify-content: flex-start;
+        padding: 12px 14px;
+    }
+
+    .userSidebarShell.collapsed .userSidebarItemIcon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .userSidebarShell.collapsed .userSidebarItemLabel,
+    .userSidebarShell.collapsed .userSidebarGroupTitle,
+    .userSidebarShell.collapsed .userSidebarContinue span {
+        opacity: 1;
+        width: auto;
+        display: initial;
+    }
+
+    .studentMobileToggleBtn {
+        display: flex;
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        z-index: 1001;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background: #FF9933;
+        color: white;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(255, 153, 51, 0.3);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .studentMobileOverlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(15, 23, 42, 0.4);
+        backdrop-filter: blur(4px);
+        z-index: 999;
+    }
+
+    .userSidebarFooter {
+        margin-top: auto;
+    }
+
+    .userSidebarContinue.iconOnly {
+        width: 100%;
+        height: auto;
+        padding: 14px 16px;
+        margin: 0;
+        border-radius: 18px;
+    }
+
+    .userSidebarContinue.iconOnly span {
+        display: inline;
+    }
+}

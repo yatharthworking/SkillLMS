@@ -1,0 +1,292 @@
+.liveClassHomeSectionContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.classOverviewStrip {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.classOverviewCard,
+.liveClassEventSection,
+.CalendarEventSection {
+    border-radius: 22px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 249, 240, 0.98) 100%);
+    border: 1px solid rgba(33, 158, 188, 0.12);
+    box-shadow: 0 12px 24px rgba(16, 46, 60, 0.06);
+}
+
+.classOverviewCard {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.classOverviewCard span,
+.classOverviewCard small,
+.schedule-time,
+.eventDate,
+.schedule-detail,
+.classEmptySubTitle {
+    color: #6b728c;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.classOverviewCard strong,
+.liveClassHeaderSection,
+.upcomingClassHeading,
+.subjectNameHeader,
+.schedule-date,
+.schedule-title,
+.classEmptyTitle {
+    color: #23252e;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.classOverviewCard strong {
+    font-size: 30px;
+    line-height: 1;
+}
+
+.classEventsDivDSection {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+}
+
+.liveClassEventSection {
+    width: 72%;
+    min-height: 74vh;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.CalendarEventSection {
+    width: 28%;
+    min-height: 74vh;
+    padding: 18px;
+}
+
+.sectionHeaderRow,
+.calendarDiv,
+.scheduleItemTopRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.scheduleFilterBar {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.upcomingClassHeading {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.35;
+    border-left: 4px solid #ffb703;
+    padding-left: 10px;
+}
+
+.scheduleFilterButton,
+.miniActionButton,
+.joinClassButton,
+.liveClassButton {
+    border: none;
+    border-radius: 999px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.scheduleFilterButton {
+    padding: 10px 14px;
+    background: rgba(33, 158, 188, 0.1);
+    color: #177d96;
+}
+
+.scheduleFilterButton.active {
+    background: linear-gradient(135deg, #ff9933 0%, #ff7a00 100%);
+    color: #ffffff;
+}
+
+.scheduleFilterButton.secondary,
+.miniActionButton {
+    background: rgba(255, 183, 3, 0.14);
+    color: #b45309;
+}
+
+.downloadImg {
+    cursor: pointer;
+}
+
+.classSheduleSection,
+.schedule-item {
+    background: #ffffff;
+    border: 1px solid #ededf1;
+    padding: 14px;
+    border-radius: 18px;
+    box-shadow: 4px 4px 12px 0 rgba(33, 158, 188, 0.1);
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.classSheduleSection:hover,
+.schedule-item:hover {
+    transform: translateY(-2px);
+    border-color: rgba(33, 158, 188, 0.22);
+    box-shadow: 0 16px 24px rgba(33, 158, 188, 0.12);
+}
+
+.liveClassDetailsSection,
+.liveClassTimingDiv,
+.joinClassTimeDiv,
+.scheduleDetailsDiv {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.liveClassButton {
+    background: #d9f7de;
+    padding: 8px 12px;
+    color: #16ca33;
+    font-size: 12px;
+}
+
+.joinClassButton {
+    background: #219ebc;
+    padding: 10px 16px;
+    color: #ffffff;
+    box-shadow: 4px 6px 16px 0 rgba(60, 185, 212, 0.16);
+}
+
+.LiveClassDetailsDiv {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.subjectNameHeader,
+.schedule-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.eventDate {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.eventDay {
+    margin-left: 4px;
+    color: #ff7a00;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.schedule-detail,
+.schedule-time {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.react-calendar {
+    border: none;
+    width: 100%;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.react-calendar__tile--active {
+    background: #1d74d8 !important;
+    border-radius: 12px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    margin-top: 3px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ff9933;
+}
+
+.schedule-container {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 330px;
+    overflow-y: auto;
+}
+
+.schedule-date {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.classEmptyState {
+    padding: 28px 20px;
+    border-radius: 20px;
+    border: 1px dashed rgba(33, 158, 188, 0.18);
+    background: rgba(245, 249, 252, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.classEmptyState.compact {
+    padding: 20px 16px;
+}
+
+.classEmptyTitle {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.classEmptySubTitle {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+@media (max-width: 1100px) {
+    .classEventsDivDSection {
+        flex-direction: column;
+    }
+
+    .liveClassEventSection,
+    .CalendarEventSection {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .classOverviewStrip {
+        grid-template-columns: 1fr;
+    }
+
+    .sectionHeaderRow,
+    .calendarDiv,
+    .scheduleItemTopRow {
+        align-items: flex-start;
+    }
+}

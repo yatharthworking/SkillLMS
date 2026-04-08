@@ -1,0 +1,353 @@
+.loginDialogOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginDialog {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  max-width: 100%;
+  position: relative;
+}
+
+.loginDialogHeader{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.loginDialogTabs{
+    display: flex;
+    width: 100%;
+    gap:10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.loginTabContent{
+    margin-top: 10px;
+}
+
+/* .closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.loginTabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.loginTabs button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.loginContent input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.loginContent button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #219EBC;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.loginContent div {
+  text-align: center;
+  margin-top: 10px;
+} */
+
+
+
+.loginHeader{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+
+}
+
+.loginHeaderTxt{
+  color: var(--Primary-950, #102E3C);
+  -webkit-text-stroke-width: 2;
+  -webkit-text-stroke-color: #FFF;
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+}
+
+.loginDialogContentBody{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+}
+
+.loginDialogToggleSection{
+  display: flex;
+  height: 38px;
+  padding: 2px 4px;
+  align-items: center;
+  border-radius: 40px;
+  background: var(--Primary-100, #D5F3F8);
+}
+
+.toggleSectionBox{
+  cursor: pointer;
+  display: flex;
+  width: max-content;
+  height: 34px;
+  padding: 0px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--Primary-500, #219EBC);
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.toggleSectionBox.selected{
+  cursor: pointer;
+  display: flex;
+  height: 34px;
+  padding: 0px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  background: var(--Primary-500, #219EBC);
+  color: var(--White, #FFF);
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+.loginDialogFormSection{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.loginFormSectionInputGroup{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.loginDialogInputSectionBox{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.loginDialogInputLabel{
+  color: var(--Grey-700, #464A5E);
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.loginDialogInputBox{
+  display: flex;
+  height: 24px;
+  padding: 2% 4%;
+  width: 92%;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 6px;
+  border: 1px solid var(--Grey-400, #898FA7);
+  background: var(--White, #FFF);
+}
+
+.loginMandatoryLabel{
+  color: var(--Red-500, #E72755);
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.passwordInputContainer {
+  position: relative;
+  width: 100%;
+}
+
+.eyeButtonDilog {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.eyeIconDialog {
+  width: 20px;
+  height: auto;
+}
+
+
+.loginDialogBtn{
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  height: 38px;
+  min-width: 110px;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  align-self: stretch;
+  border-radius: 6px;
+  background: var(--Primary-500, #219EBC);
+  box-shadow: 4px 6px 16px 0px rgba(60, 185, 212, 0.16);
+  color: var(--White, #FFF);
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 17.5px */
+}
+
+.loginDialogForgotPsd{
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  color: var(--Primary-500, #219EBC);
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.loginDialogOrSection{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.orSectionMidLineDialog{
+  width: 48%;
+  border-bottom: 2px solid var(--Grey4, #DFE7F7);
+}
+
+.orSectionTxtDialog{
+  width: 6%;
+  color: var(--Grey1, #132740);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+}
+
+.loginDialogGoogleBtn{
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  padding: 6px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--Primary-200, #B0E7F1);
+  background: var(--Primary-50, #EEFBFD);
+  box-shadow: 4px 6px 16px 0px rgba(60, 185, 212, 0.16);
+}
+
+.googleLoginBtnTxtDialog{
+  color: var(--Grey-950, #23252E);
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 17.5px */
+}
+
+.loginDialogRegisterSection{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.registerNowPrimaryDialog{
+  color: var(--Grey-950, #23252E);
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.registerNowSecondaryDialog{
+  cursor: pointer;
+  color: var(--Primary-500, #219EBC);
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

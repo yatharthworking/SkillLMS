@@ -1,0 +1,437 @@
+.helpSupportPage {
+    min-height: 100%;
+    padding: 28px;
+    background:
+        radial-gradient(circle at top right, rgba(255, 162, 74, 0.18), transparent 26%),
+        linear-gradient(180deg, #fffaf1 0%, #fff7ec 100%);
+    color: #17355f;
+}
+
+.helpSupportLoader {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.helpSupportLoader.compact {
+    min-height: 180px;
+}
+
+.helpSupportHero {
+    margin-bottom: 24px;
+}
+
+.helpSupportHeroBadge,
+.helpSupportEyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(255, 142, 31, 0.15);
+    color: #d86600;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.helpSupportHero h1 {
+    margin: 18px 0 12px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.05;
+}
+
+.helpSupportHero p {
+    max-width: 780px;
+    margin: 0;
+    color: #51627f;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.helpSupportStats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 24px;
+}
+
+.helpSupportStatCard,
+.helpSupportCard {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(33, 158, 188, 0.12);
+    border-radius: 28px;
+    box-shadow: 0 18px 45px rgba(23, 53, 95, 0.08);
+}
+
+.helpSupportStatCard {
+    padding: 20px 24px;
+}
+
+.helpSupportStatValue {
+    display: block;
+    font-size: 34px;
+    font-weight: 700;
+    color: #17355f;
+}
+
+.helpSupportStatLabel {
+    display: block;
+    margin-top: 6px;
+    color: #6a7a92;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.helpSupportGrid,
+.helpSupportBottomGrid {
+    display: grid;
+    gap: 22px;
+}
+
+.helpSupportGrid {
+    grid-template-columns: 1.05fr 1.2fr;
+    margin-bottom: 22px;
+}
+
+.helpSupportBottomGrid {
+    grid-template-columns: 1.4fr 0.8fr;
+}
+
+.helpSupportCard {
+    padding: 26px;
+}
+
+.helpSupportSectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.helpSupportSectionHeader h2 {
+    margin: 12px 0 0;
+    color: #17355f;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.faqAccordionList,
+.issueList,
+.contactOptionList,
+.helpSupportForm {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.faqAccordionItem {
+    border: 1px solid rgba(23, 53, 95, 0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faqAccordionItem.active,
+.faqAccordionItem:hover,
+.issueItem:hover,
+.contactOption:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(23, 53, 95, 0.08);
+}
+
+.faqAccordionToggle {
+    width: 100%;
+    border: none;
+    background: #fff;
+    color: #17355f;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.faqAccordionAnswer {
+    padding: 0 20px 18px;
+    color: #5f6f88;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.faqAccordionIcon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(33, 158, 188, 0.12);
+    color: #219ebc;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.helpSupportField,
+.helpSupportFieldRow {
+    display: flex;
+    gap: 14px;
+}
+
+.helpSupportField {
+    flex-direction: column;
+}
+
+.helpSupportFieldRow .helpSupportField {
+    flex: 1;
+}
+
+.helpSupportField label {
+    color: #4a5d7d;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.helpSupportField input,
+.helpSupportField select,
+.helpSupportField textarea {
+    width: 100%;
+    border: 1px solid rgba(23, 53, 95, 0.12);
+    border-radius: 18px;
+    background: #fff;
+    color: #17355f;
+    font-size: 15px;
+    padding: 15px 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.helpSupportField textarea {
+    min-height: 148px;
+    resize: vertical;
+}
+
+.helpSupportField input:focus,
+.helpSupportField select:focus,
+.helpSupportField textarea:focus {
+    border-color: rgba(33, 158, 188, 0.45);
+    box-shadow: 0 0 0 4px rgba(33, 158, 188, 0.08);
+}
+
+.attachmentName {
+    color: #6a7a92;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.helpSupportActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 6px;
+}
+
+.primaryButton,
+.secondaryButton {
+    border-radius: 16px;
+    padding: 14px 22px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+    transform: translateY(-1px);
+}
+
+.primaryButton {
+    border: none;
+    background: linear-gradient(135deg, #ff8e1f 0%, #ff9f3f 100%);
+    color: #fff;
+    box-shadow: 0 14px 28px rgba(255, 142, 31, 0.28);
+}
+
+.secondaryButton {
+    border: 1px solid rgba(23, 53, 95, 0.14);
+    background: #fff;
+    color: #17355f;
+}
+
+.issueList {
+    max-height: 620px;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+.issueItem {
+    padding: 18px 20px;
+    border: 1px solid rgba(23, 53, 95, 0.08);
+    border-radius: 22px;
+    background: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.issueTitleRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.issueTitleRow h3 {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 700;
+    color: #17355f;
+}
+
+.issueMeta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    margin-top: 10px;
+    color: #6a7a92;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.issueStatusBadge {
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.issueStatusBadge.open {
+    background: rgba(228, 72, 48, 0.12);
+    color: #c2472d;
+}
+
+.issueStatusBadge.in-progress {
+    background: rgba(255, 142, 31, 0.15);
+    color: #d97706;
+}
+
+.issueStatusBadge.resolved {
+    background: rgba(40, 167, 69, 0.12);
+    color: #238a3f;
+}
+
+.issueDescription {
+    margin: 14px 0 0;
+    color: #53657f;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.adminReplyBox {
+    margin-top: 16px;
+    padding: 14px 16px;
+    border-radius: 18px;
+    background: rgba(33, 158, 188, 0.08);
+    color: #17355f;
+}
+
+.adminReplyLabel {
+    margin-bottom: 6px;
+    color: #219ebc;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.contactOption {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px;
+    border-radius: 20px;
+    border: 1px solid rgba(23, 53, 95, 0.08);
+    background: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contactIcon {
+    width: 46px;
+    height: 46px;
+    border-radius: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #219ebc 0%, #2a6f97 100%);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.contactLabel {
+    color: #6a7a92;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.contactValue {
+    margin-top: 4px;
+    color: #17355f;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.emptySupportState {
+    padding: 26px;
+    border-radius: 20px;
+    background: rgba(255, 142, 31, 0.08);
+    color: #6a583d;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+@media (max-width: 1180px) {
+    .helpSupportGrid,
+    .helpSupportBottomGrid,
+    .helpSupportStats {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .helpSupportPage {
+        padding: 18px;
+    }
+
+    .helpSupportHero h1 {
+        font-size: 40px;
+    }
+
+    .helpSupportHero p {
+        font-size: 17px;
+    }
+
+    .helpSupportCard {
+        padding: 20px;
+        border-radius: 22px;
+    }
+
+    .helpSupportSectionHeader h2 {
+        font-size: 24px;
+    }
+
+    .helpSupportFieldRow,
+    .helpSupportActions,
+    .issueTitleRow {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

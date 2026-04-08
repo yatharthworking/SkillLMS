@@ -1,0 +1,164 @@
+.WebinarAdminMainPage{
+    padding: 12px; 
+}
+
+.webinar_Section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.WebinarSubSection{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.webinarHeaderText{
+    color:#23252E;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.webinarsSearchBox{
+    padding: 12px;
+    display: flex; 
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 26px;
+    border: 1px solid var(--Grey-400, #898FA7);
+    background: var(--White, #FFF);
+}
+
+.SearchInput{
+    width: 300px;
+    border: none;
+    outline: none;
+    color: var(--Grey-500, #6B728C);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.buttonDiv{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #219EBC;
+    height: 24px;
+    border: none;
+    padding: 6px 12px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.webinarTableContainer{
+    margin-top: 12px; 
+    background-color: #FFFFFF;
+    height: 70vh;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+.webinarTableContainer::-webkit-scrollbar {
+    width: 8px; /* Adjust the width to make it thin */
+}
+
+.webinarTableContainer::-webkit-scrollbar-thumb {
+    /* background-color: rgba(0, 0, 0, 0.2); Color of the scrollbar thumb */
+    background-color: #898FA7;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+.webinarTableContainer::-webkit-scrollbar-track {
+    /* background-color: rgba(0, 0, 0, 0.1); Color of the scrollbar track */
+    background: #f1f1f1;
+}
+
+.webinarMainSection{
+    padding: 12px;
+}
+
+.webinarTable{
+    border-bottom: 1px solid #ECEFF5; 
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.webinarTable th {
+    color: #898FA7;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17.5px; 
+    padding: 10px;
+    border-bottom: 1px solid #ECEFF5;
+    text-align: left;
+}
+
+.webinarTable td {
+    padding: 6px 10px;
+    color: var(--Grey1, #132740);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/* .webinarTable tbody tr:hover {
+    background: #DBECFE;
+} */
+
+/* New CSS for alternating row colors */
+.webinarTable tbody tr:nth-child(odd) {
+    background-color: #F6F7F9;
+}
+
+.webinarTable tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.PaginationContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.truncated-text {
+    display: inline-block;
+    max-width: 100px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer; 
+  }
+
+  .webinarName{
+    color:#23252E;
+    font-weight: 600;
+    font-size: 14px;
+    padding-bottom: 4px;
+  }
+
+  .loadingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  
+  
+
+
+
+
+ 

@@ -1,0 +1,465 @@
+.recordingPage {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.recordingContinuePanel,
+.recordingAccordionPanel,
+.recordingCardsPanel {
+    border-radius: 22px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 249, 240, 0.98) 100%);
+    border: 1px solid rgba(33, 158, 188, 0.12);
+    box-shadow: 0 12px 24px rgba(16, 46, 60, 0.06);
+}
+
+.recordingContinuePanel {
+    padding: 18px;
+}
+
+.recordingEyebrow,
+.recordingCardSubTitle,
+.recordingCardMetaRow,
+.recordingDatePill span,
+.recordingSubjectHeader span,
+.recordingTopicHeader small,
+.recordingLectureCopy span,
+.recordingEmptyState span,
+.recordingModalHeader p {
+    color: #6b728c;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.recordingEyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 11px;
+    font-weight: 800;
+    color: #c2410c;
+}
+
+.recordingContinuePanel h2,
+.recordingSectionTitle,
+.recordingCardTitle,
+.recordingSubjectHeader strong,
+.recordingLectureCopy strong,
+.recordingModalHeader h3,
+.recordingEmptyState strong {
+    color: #23252e;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.recordingContinuePanel h2 {
+    margin: 8px 0 0;
+    font-size: 24px;
+}
+
+.recordingContinueGrid {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.recordingContinueCard,
+.recordingThumb,
+.recordingSubjectHeader,
+.recordingTopicHeader,
+.recordingLectureRow {
+    border: none;
+    cursor: pointer;
+}
+
+.recordingContinueCard {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: 180px;
+    padding: 18px;
+    background: linear-gradient(135deg, #167a95 0%, #2aa7c7 60%, #ffb257 100%);
+    color: #ffffff;
+    text-align: left;
+}
+
+.recordingCardOverlay,
+.recordingThumbMeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recordingPlayBadge,
+.recordingNewBadge,
+.recordingPrimaryButton,
+.recordingGhostButton,
+.recordingDatePill button,
+.recordingSpeedControls button,
+.recordingModalClose {
+    border-radius: 999px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+}
+
+.recordingPlayBadge {
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.recordingNewBadge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+    background: rgba(255, 183, 3, 0.2);
+    color: #ffffff;
+    font-size: 11px;
+}
+
+.recordingContinueCopy {
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.recordingContinueCopy strong {
+    font-size: 18px;
+}
+
+.recordingContinueCopy span,
+.recordingContinueCopy small {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.recordingToolbar,
+.recordingToolbarLeft,
+.recordingFilters,
+.recordingCardActions,
+.recordingPlayerFooter,
+.recordingSpeedControls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.recordingToolbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recordingSearch {
+    min-width: 280px;
+    border-radius: 999px;
+    border: 1px solid #bfdce5;
+    padding: 12px 16px;
+    background: #ffffff;
+    color: #6b728c;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.recordingFilters button,
+.recordingDatePill button,
+.recordingSpeedControls button,
+.recordingModalClose {
+    border: none;
+    padding: 10px 14px;
+    background: rgba(33, 158, 188, 0.1);
+    color: #177d96;
+    cursor: pointer;
+}
+
+.recordingFilters button.active,
+.recordingPrimaryButton,
+.recordingSpeedControls button.active {
+    background: linear-gradient(135deg, #ff9933 0%, #ff7a00 100%);
+    color: #ffffff;
+}
+
+.recordingDatePill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 999px;
+    background: rgba(255, 183, 3, 0.14);
+}
+
+.recordingContentLayout {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 16px;
+}
+
+.recordingAccordionPanel,
+.recordingCardsPanel {
+    padding: 18px;
+}
+
+.recordingSectionTitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.recordingSubjectBlock {
+    border: 1px solid rgba(33, 158, 188, 0.12);
+    border-radius: 18px;
+    background: #ffffff;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.recordingSubjectHeader,
+.recordingTopicHeader {
+    width: 100%;
+    background: transparent;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.recordingChevron {
+    font-size: 24px;
+    color: #219ebc;
+}
+
+.recordingSubjectTopics,
+.recordingTopicLectures {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+
+.recordingSubjectTopics.open {
+    max-height: 900px;
+}
+
+.recordingTopicLectures.open {
+    max-height: 600px;
+    padding: 0 12px 12px;
+}
+
+.recordingTopicBlock {
+    padding: 0 4px 4px;
+}
+
+.recordingLectureRow {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 16px;
+    background: rgba(245, 249, 252, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.recordingLectureRow:hover,
+.recordingCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 24px rgba(33, 158, 188, 0.12);
+}
+
+.recordingLectureStatus,
+.recordingCardResume {
+    color: #ff7a00;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.recordingCardsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.recordingCard {
+    border-radius: 20px;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid rgba(33, 158, 188, 0.12);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.recordingThumb {
+    width: 100%;
+    min-height: 180px;
+    padding: 16px;
+    background: linear-gradient(135deg, rgba(33, 158, 188, 0.94) 0%, rgba(18, 84, 104, 0.94) 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recordingPlayOverlay {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.16);
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-top: 24px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+}
+
+.recordingThumbMeta span {
+    color: #ffffff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.recordingProgressTrack {
+    width: 100%;
+    height: 8px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+
+.recordingProgressTrack div {
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #ffb703 0%, #ff7a00 100%);
+}
+
+.recordingCardBody {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.recordingCardTitle {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.recordingCardSubTitle,
+.recordingCardMetaRow {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.recordingGhostButton {
+    border: 1px solid rgba(33, 158, 188, 0.18);
+    padding: 10px 14px;
+    background: transparent;
+    color: #177d96;
+    cursor: pointer;
+}
+
+.recordingPrimaryButton {
+    border: none;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+.recordingEmptyState {
+    padding: 28px;
+    border-radius: 20px;
+    border: 1px dashed rgba(33, 158, 188, 0.18);
+    background: rgba(245, 249, 252, 0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+
+.recordingModalShell {
+    position: fixed;
+    inset: 0;
+    z-index: 1200;
+}
+
+.recordingModalBackdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.5);
+}
+
+.recordingModalCard {
+    position: relative;
+    width: min(920px, calc(100% - 32px));
+    margin: 40px auto;
+    border-radius: 24px;
+    background: #ffffff;
+    padding: 20px;
+    z-index: 1;
+    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.24);
+}
+
+.recordingModalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.recordingModalHeader h3 {
+    margin: 8px 0 4px;
+    font-size: 24px;
+}
+
+.recordingPlayer {
+    width: 100%;
+    border-radius: 18px;
+    background: #000000;
+}
+
+.recordingPlayerFooter {
+    margin-top: 14px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recordingResumeLabel {
+    color: #475569;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+    .recordingContentLayout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .recordingContinueGrid,
+    .recordingCardsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .recordingToolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .recordingSearch {
+        min-width: 100%;
+    }
+
+    .recordingModalHeader,
+    .recordingPlayerFooter,
+    .recordingLectureRow {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

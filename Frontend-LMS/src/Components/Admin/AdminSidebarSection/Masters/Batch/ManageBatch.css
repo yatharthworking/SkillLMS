@@ -1,0 +1,263 @@
+.Page{
+    height: 100vh;
+    width: 100%;
+    background: var(--Primary-50, #EEFBFD);
+}
+
+.PageContent{
+    width: 98%;
+    height: 94%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 1%;
+}
+
+.WhiteContainerBox{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #fff;
+    width: 98%;
+    height: 80vh;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px 0px #219EBC1F;
+    padding: 1%;
+}
+
+.InfoBox{
+    display: flex;
+    flex-direction: row;
+}
+
+.LeftInfoBox{
+    display: flex;
+    width: 11%;
+    /* background-color: aliceblue; */
+    flex-direction: column;
+}
+
+.RightInfoBox{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: #464A5E;
+
+}
+
+.WholeTab{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.SearchbuttonSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Default{
+    background: #3CB9D4;
+    padding: 2px 5px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;   
+}
+
+.Gender {
+    background: #3CB9D4;
+    padding: 1px 6px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  .Gender.Female {
+    background: #E562A1;
+  }
+  
+  .loader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+
+.inputFiledToggle{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.dialog-body2 {
+    /* display: flex; */
+    gap: 12px;
+    overflow-y: auto;
+    max-height: 400px;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    align-items: center;
+}
+
+.custom-datetime-input input{
+    border: none;
+    width: 200px;
+    font-size: 13px;
+}
+
+.table-container {
+    max-height: 350px; /* Adjust the height as needed */
+    overflow-y: auto;
+  }
+
+  .no-data-message {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #555;
+  }
+
+  .table-container::-webkit-scrollbar {
+    width: 5px; 
+  }
+  .table-container::-webkit-scrollbar-thumb {
+    background-color: #888;  
+    border-radius: 2px;  
+  }
+  
+  .table-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;  
+  }
+
+  .TestDetailContainer{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    background: #e7f2fb;
+    width: 98%;
+    border-radius: 6px;
+    padding: 1%;
+    gap: 10px;
+  }
+
+  .HeadlineTest{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .RightText{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .RightText span{
+    font-size: 12px;
+  }
+
+  .SubHeadlineTextDetails{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .SubTestdetails{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 4px;
+  }
+
+  .descBox{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+  }
+
+  .MarkBox{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: flex-end;
+    align-items: flex-end;
+   
+  }
+
+  .RowLine{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .RowText{
+    color: #464A5E;
+    font-size: 14px;
+    width: 130px;
+
+  }
+
+  .MarksContent{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    background: #EDEDF1;
+    padding: 12px;
+    gap: 16px;
+  }
+
+  .QuestionPage{
+    display: flex;
+    flex-direction: column;
+    min-height: 20vh;
+    background-color: #fff;
+    gap: 6px;
+    width: 98%;
+    padding: 1%;
+  }
+
+  .Quesname{
+    display: flex;
+    gap: 10px;
+  }
+
+  .OptionText{
+    width: 200px;
+    border-radius: 6px;
+    height: 20px;
+  }
+
+  .QuestionAddedPreview{
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    background-color: #e7f2fb;
+    min-height: 20vh;
+    gap: 14px;
+    padding: 4px;
+  }
+
+
+  .QustionPart{
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    background: #eeeeee;
+    border-radius: 10px;
+  }
+
+  .smallInput{
+    height: 20px;
+    width: 80px;
+  }

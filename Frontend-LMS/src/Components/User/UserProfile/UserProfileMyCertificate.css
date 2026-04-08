@@ -1,0 +1,114 @@
+.userProfileMyCertificatePage{
+    width: 98%;
+    height: 96%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--White, #FFF);
+    box-shadow: 4px 4px 12px 0px rgba(33, 158, 188, 0.12);
+}
+
+.certificateHeading{
+    color: #23252E;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    border-left: 4px solid #FFB703;
+    padding-left: 10px;
+}
+
+.certificateSearch{
+    border: 1px solid var(--Grey-400, #898FA7);
+    display: flex;
+    padding: 6px 12px;
+    justify-content: space-between; 
+    border-radius: 26px;
+    width: 30%;
+}
+
+.courseSearchBox{
+    display: flex;
+    height: 24px; 
+    width: 92%;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 6px;
+    border: none;
+    background: var(--White, #FFF);
+}
+
+.courseSearchBox:focus {
+    outline: none;  
+    box-shadow: none;  
+}
+
+.searchIcon{
+    cursor: pointer;
+}
+
+.certificateSubContent {
+    display: flex;  
+    align-items: center;  
+    gap: 12px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .smallBox {
+    width: 258px;  
+    height: 123px;  
+    background-color: white;
+    box-shadow: 4px 4px 12px 0 rgba(33, 158, 188, 0.12);
+    border-radius: 8px; 
+    padding: 1%;  
+  }
+
+  .courseHeading{
+    color: #23252E;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .teacherName{
+    color: #6B728C;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .grade{
+    padding-top: 3%;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .certificateDownloadButton{
+    width: 90%;
+    background:#219EBC;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px; 
+    cursor: pointer;
+  }
+
+  .certificatePreviewButton{
+    width: 10%;
+    background: #ffffff;
+    color: #219EBC;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 0px 6px;
+    border: 1px solid #219EBC;
+    border-radius: 6px;
+    cursor: pointer;
+
+  }
+  

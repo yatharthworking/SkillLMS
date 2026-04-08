@@ -1,0 +1,345 @@
+
+.navContainer {
+    width: 100%;
+    background-color: #215569;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 4px 6px 16px 0px rgba(60, 185, 212, 0.16);
+    padding: 14px 28px;
+    gap: 20px;
+    min-height: 84px;
+    box-sizing: border-box;
+}
+
+.navBrandSection {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+}
+
+.navbarLogo {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 6px;
+}
+
+.navbarBrandText {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+}
+
+.navbarOrgName {
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    word-break: break-word;
+}
+
+.logoutIcon {
+    display: flex;
+    align-items: center;
+}
+
+.navbarHaedingSection {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 4px;
+    min-width: 0;
+}
+
+.userFullName {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 220px;
+}
+
+.userEmail {
+    color: #EDEDF1;
+    font-weight: 500;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 220px;
+}
+
+.navbarActions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 14px;
+    min-width: 0;
+}
+
+.notificationWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.notificationIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.notificationCount {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: #E11D48;
+    color: white;
+    border-radius: 20px;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: 800;
+    min-width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 8px rgba(225, 29, 72, 0.4);
+    border: 1.5px solid #215569; /* Match navbar background for contrast */
+}
+
+.userAdminRole {
+    width: fit-content;
+    padding: 6px 10px;
+    background-color: #1E7E9C;
+    border-radius: 999px;
+    color: #EEFBFD;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.roleAndBranchSection {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.leftBranchName {
+    color: #EDEDF1;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+}
+
+.navbarAvatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+@media only screen and (max-width: 768px) {
+    .navContainer {
+        padding: 12px 16px;
+        min-height: 76px;
+        gap: 12px;
+    }
+
+    .navbarLogo {
+        width: 48px;
+        height: 48px;
+        padding: 5px;
+    }
+
+    .navbarOrgName {
+        font-size: 1rem;
+    }
+
+    .navbarHaedingSection {
+        max-width: 150px;
+    }
+
+    .userFullName,
+    .userEmail {
+        max-width: 150px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .navContainer {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .navBrandSection,
+    .navbarActions {
+        width: 100%;
+    }
+
+    .navbarActions {
+        justify-content: space-between;
+    }
+
+    .navbarHaedingSection {
+        flex: 1;
+        text-align: left;
+    }
+
+    .userFullName,
+    .userEmail {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .navbarOrgName {
+        font-size: 0.95rem;
+    }
+
+    .userAdminRole {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+    
+    .leftBranchName {
+        font-size: 11px;
+    }
+
+    .userEmail {
+        display: none;
+    }
+
+    .navbarAvatar,
+    .notificationWrapper {
+        width: 38px;
+        height: 38px;
+    }
+
+    .notificationIcon {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Profile Dropdown Styles */
+.navbarAvatarSection {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.avatarWrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.profileDropdown {
+    position: absolute;
+    top: calc(100% + 15px);
+    right: 0;
+    width: 260px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.15);
+    padding: 8px 0;
+    z-index: 1000;
+    animation: dropdownFadeIn 0.25s ease-out;
+}
+
+@keyframes dropdownFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdownHeader {
+    padding: 16px 20px;
+}
+
+.dropdownName {
+    color: #215569;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdownEmail {
+    color: #6B7280;
+    font-size: 13px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdownDivider {
+    height: 1px;
+    background: #F1F5F9;
+    margin: 4px 0;
+}
+
+.dropdownItem {
+    padding: 12px 20px;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.dropdownItem:hover {
+    background: #F8FAFC;
+    color: #215569;
+}
+
+.logoutItem {
+    color: #E11D48;
+}
+
+.logoutItem:hover {
+    background: #FFF1F2;
+    color: #BE123C;
+}
+
+/* Ensure avatar is circular and premium */
+.navbarAvatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.avatarWrapper:hover .navbarAvatar {
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.4);
+}

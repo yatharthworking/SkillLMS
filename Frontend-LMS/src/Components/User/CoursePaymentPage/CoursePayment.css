@@ -1,0 +1,122 @@
+.coursePaymentPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #EEFBFD;
+  }
+  
+  .coursePaymentContainer {
+    width: 600px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .paymentHeader{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .purchaseCourseHeader {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .summaryAndBillingContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .summarySection, .billingSection {
+    width: 48%;
+  }
+
+  .summarySection{
+    border-right: 1px solid #00b7c2;
+    padding-right: 10px;
+  }
+  
+  .summaryTitle, .billingTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .summaryItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .summaryItem.total {
+    font-weight: 700;
+    border-top: 1px solid #464444;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  
+  .billingItem {
+    margin-bottom: 10px;
+    gap: 10px;
+    width: 100%;
+    font-weight: 500;
+  }
+  
+
+  
+  .billingItem select {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .billingItem input{
+    width: 94%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .cancelBtn, .proceedToPayBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .cancelBtn {
+    border: 1px solid #219EBC;
+    padding: 6px 12px;
+    border-radius: 6px;
+    gap: 6px;
+    width: 150px;
+    height: 38px;
+    color: #219EBC;
+    font-weight: 700;
+    font-size: 14px;
+    background: #EEFBFD;
+    cursor: pointer;
+  }
+  
+  .proceedToPayBtn {
+    font-weight: 700;
+    background-color: #00b7c2;
+    color: white;
+  }
+  

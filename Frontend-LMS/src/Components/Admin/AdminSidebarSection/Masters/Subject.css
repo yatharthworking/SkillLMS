@@ -1,0 +1,264 @@
+.subjectMasterAdminMainPage{
+    padding: 12px; 
+}
+
+.subjectMaster_Section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subjectMasterSubSection{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.subjectMasterHeaderText{
+    color:#23252E;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.subjectMasterSearchBox{
+    padding: 12px;
+    display: flex; 
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 26px;
+    border: 1px solid var(--Grey-400, #898FA7);
+    background: var(--White, #FFF);
+}
+
+.subjectMasterSearchInput{
+    width: 300px;
+    border: none;
+    outline: none;
+    color: var(--Grey-500, #6B728C);
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.importSubjectButtonGroup{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.importSubjectBtn{
+    cursor: pointer;
+    display: flex;
+    height: 22px;
+    min-width: 90px;
+    padding: 6px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 6px;
+    border: 2px solid var(--Primary-500, #219EBC);
+    color: var(--Primary-500, #219EBC);
+    text-align: center;
+    
+    /* 14px-bold */
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 17.5px */
+    }
+
+    .subjectMasterButtonDiv{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background-color: #219EBC;
+        height: 24px;
+        border: none;
+        padding: 6px 12px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .subjectMasterTableContainer{
+        margin-top: 12px; 
+        background-color: #FFFFFF;
+        height: 70vh;
+        border-radius: 8px;
+        overflow-y: auto;
+    }
+    .subjectMasterTableContainer::-webkit-scrollbar {
+        width: 6px; /* Adjust the width to make it thin */
+    }
+    
+    .subjectMasterTableContainer::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2); /* Color of the scrollbar thumb */
+    }
+    .subjectMasterTableContainer::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0.1); /* Color of the scrollbar track */
+    }
+    
+    .subjectMasterTableContainer::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(0, 0, 0, 0.3); /* Color of the scrollbar thumb on hover */
+    }
+
+    .subjectMasterMainSection{
+        padding: 12px;
+    }
+
+    .subjectMasterTable{
+        border-bottom: 1px solid #ECEFF5; 
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    .subjectMasterTable th {
+        color: #898FA7;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 17.5px; 
+        padding: 10px;
+        border-bottom: 1px solid #ECEFF5;
+        text-align: left;
+    }
+    
+    .subjectMasterTable td {
+        padding: 6px 10px;
+        color: var(--Grey1, #132740);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    
+    /* .webinarTable tbody tr:hover {
+        background: #DBECFE;
+    } */
+    
+    /* New CSS for alternating row colors */
+    .subjectMasterTable tbody tr:nth-child(odd) {
+        background-color: #F6F7F9;
+    }
+    
+    .subjectMasterTable tbody tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+
+    .subjectDialog-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    .subjectHeader{
+        font-weight: 600;
+        color: #23252E;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .subjectHeader-content {
+        background-color: #ffffff;
+        padding: 12px;
+        border-radius: 12px;
+        width: 400px; /* Adjust as needed */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        /* align-items: center; */
+    }
+
+    .subjectTextDiv{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .subjectName{
+        color: #464A5E;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .subjectInputFiled{
+        padding: 10px;
+        border: 1px solid #898FA7;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    .subjectBody{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .subjectDialogActions{
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+    }
+
+    .subjectDialogButtonSecondary,
+    .subjectDialogButtonPrimary{
+        border: none;
+        border-radius: 6px;
+        padding: 10px 16px;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .subjectDialogButtonSecondary{
+        background: #EDEFF5;
+        color: #464A5E;
+    }
+
+    .subjectDialogButtonPrimary{
+        background: #219EBC;
+        color: #FFFFFF;
+    }
+
+    .subjectDialogButtonPrimary:disabled,
+    .subjectDialogButtonSecondary:disabled{
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+
+    .subjectEmptyState{
+        text-align: center;
+        padding: 32px;
+        color: #6B728C;
+    }
+
+    .subjectDeleteText{
+        color: #23252E;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .subjectMetaNote{
+        color: #6B728C;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    
+    

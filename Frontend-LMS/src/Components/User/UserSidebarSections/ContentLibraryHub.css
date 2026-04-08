@@ -1,0 +1,386 @@
+.contentLibraryHub {
+    min-height: 100%;
+    padding: 28px;
+    background:
+        radial-gradient(circle at top right, rgba(255, 153, 51, 0.16), transparent 24%),
+        linear-gradient(180deg, #FFF9F0 0%, #FFF6E9 100%);
+}
+
+.contentLibraryHero h1,
+.contentLibrarySectionTitle,
+.contentLibraryCardTitle,
+.contentLibraryMiniCard strong {
+    color: #1E293B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.contentLibraryHero p,
+.contentLibraryCardMeta,
+.contentLibraryCardDescription,
+.contentLibraryMiniCard span,
+.contentLibraryEmptyState {
+    color: #5B6472;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.contentLibraryBackButton,
+.contentLibraryPrimaryButton,
+.contentLibraryGhostButton,
+.contentLibraryTabs button,
+.contentLibraryBookmark {
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+}
+
+.contentLibraryBackButton {
+    margin-bottom: 14px;
+    padding: 10px 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(33, 158, 188, 0.1);
+    color: #177D96;
+}
+
+.contentLibraryEyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(255, 153, 51, 0.14);
+    color: #C2410C;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.contentLibraryHero h1 {
+    margin: 18px 0 10px;
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 800;
+}
+
+.contentLibraryToolbar,
+.contentLibraryOverviewGrid,
+.contentLibrarySections,
+.contentLibraryTabs,
+.contentLibraryCardActions,
+.contentLibraryCardHeader,
+.contentLibrarySearchBox,
+.contentLibraryModalHeader,
+.contentLibraryModalActions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.contentLibraryToolbar,
+.contentLibraryOverviewGrid,
+.contentLibrarySections,
+.contentLibraryTabs {
+    margin-top: 22px;
+}
+
+.contentLibraryToolbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentLibrarySearchBox {
+    min-width: 320px;
+    align-items: center;
+    padding: 12px 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.contentLibrarySearchBox input,
+.contentLibraryFilters select {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #475569;
+}
+
+.contentLibraryFilters select {
+    padding: 12px 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.contentLibraryResetButton {
+    padding: 12px 16px;
+}
+
+.contentLibraryTabs button {
+    padding: 12px 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.92);
+    color: #334155;
+    border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.contentLibraryTabs button.active,
+.contentLibraryPrimaryButton,
+.contentLibraryBookmark.active {
+    background: linear-gradient(135deg, #FF9933 0%, #FF7A00 100%);
+    color: #FFFFFF;
+    box-shadow: 0 16px 30px rgba(255, 122, 0, 0.22);
+}
+
+.contentLibrarySection,
+.contentLibraryCard,
+.contentLibraryMiniCard,
+.contentLibraryModalCard,
+.contentLibraryOverviewCard {
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(255, 153, 51, 0.1);
+    box-shadow: 0 18px 36px rgba(168, 101, 11, 0.08);
+}
+
+.contentLibraryOverviewGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.contentLibraryOverviewCard {
+    padding: 18px;
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.contentLibraryOverviewCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 34px rgba(168, 101, 11, 0.1);
+}
+
+.contentLibraryOverviewCard strong {
+    color: #102E3C;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 28px;
+    display: block;
+}
+
+.contentLibraryOverviewCard span {
+    color: #5B6472;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.contentLibrarySection {
+    flex: 1;
+    padding: 18px;
+}
+
+.contentLibrarySectionTitle {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.contentLibraryMiniGrid,
+.contentLibraryGrid {
+    margin-top: 14px;
+    display: grid;
+    gap: 16px;
+}
+
+.contentLibraryMiniGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.contentLibraryGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.contentLibraryMiniCard,
+.contentLibraryCard {
+    padding: 18px;
+    text-align: left;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.contentLibraryMiniCard:hover,
+.contentLibraryCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 34px rgba(168, 101, 11, 0.1);
+}
+
+.contentLibraryTypeChip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(33, 158, 188, 0.1);
+    color: #177D96;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.contentLibraryBookmark {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.92);
+    color: #94A3B8;
+    border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.contentLibraryCardHeader {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentLibraryCardTitle {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.contentLibraryCardMeta {
+    margin-top: 6px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.contentLibraryCardDescription {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.contentLibraryCardActions {
+    margin-top: 18px;
+}
+
+.contentLibraryPrimaryButton,
+.contentLibraryGhostButton {
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.contentLibraryGhostButton {
+    background: rgba(255, 255, 255, 0.92);
+    color: #334155;
+    border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.contentLibraryEmptyState {
+    margin-top: 22px;
+    padding: 32px 20px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px dashed rgba(255, 153, 51, 0.14);
+    text-align: center;
+    font-weight: 700;
+}
+
+.contentLibraryEmptyState.compact {
+    margin-top: 14px;
+    padding: 18px;
+}
+
+.contentLibrarySkeleton {
+    min-height: 240px;
+    background:
+        linear-gradient(90deg, rgba(255,255,255,0.95) 25%, rgba(246,239,229,0.95) 50%, rgba(255,255,255,0.95) 75%);
+    background-size: 200% 100%;
+    animation: contentLibraryPulse 1.3s linear infinite;
+}
+
+@keyframes contentLibraryPulse {
+    from { background-position: 200% 0; }
+    to { background-position: -200% 0; }
+}
+
+.contentLibraryModalShell {
+    position: fixed;
+    inset: 0;
+    z-index: 1200;
+}
+
+.contentLibraryModalBackdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.42);
+}
+
+.contentLibraryModalCard {
+    position: relative;
+    width: min(960px, calc(100% - 32px));
+    margin: 36px auto;
+    padding: 22px;
+    z-index: 1;
+}
+
+.contentLibraryModalHeader {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentLibraryModalActions {
+    justify-content: flex-end;
+}
+
+.contentLibraryViewer {
+    margin-top: 18px;
+}
+
+.contentLibraryFrame,
+.contentLibraryVideo {
+    width: 100%;
+    min-height: 68vh;
+    border: none;
+    border-radius: 18px;
+    background: #000000;
+}
+
+.contentLibrarySimulationPanel {
+    padding: 24px;
+    border-radius: 18px;
+    background: rgba(245, 249, 252, 0.9);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+@media (max-width: 1100px) {
+    .contentLibraryOverviewGrid,
+    .contentLibraryGrid,
+    .contentLibraryMiniGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .contentLibraryHub {
+        padding: 20px 16px 28px;
+    }
+
+    .contentLibraryOverviewGrid,
+    .contentLibraryGrid,
+    .contentLibraryMiniGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .contentLibrarySearchBox {
+        min-width: 100%;
+    }
+}

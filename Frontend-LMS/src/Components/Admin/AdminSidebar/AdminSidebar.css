@@ -1,0 +1,253 @@
+.adminSidebarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 260px;
+    min-width: 80px;
+    min-height: 100vh;
+    padding: 24px 16px;
+    gap: 8px;
+    background-color: #ffffff;
+    border-right: 1px solid #f0f2f5;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.02);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.adminSidebarContainer.expanded {
+    width: 260px;
+}
+
+.adminSidebarContainer.collapsed {
+    width: 88px;
+}
+
+/* Sidebar Item Common Styles */
+.adminSiderbarBox, .teacherSidebarItem {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 12px 14px;
+    margin-bottom: 4px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    background: transparent;
+    color: #475569;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    text-align: left;
+}
+
+.adminSiderbarBox img, .teacherSidebarItem .sidebarIcon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.adminSiderbarBox:hover, .teacherSidebarItem:hover {
+    background: #f8fafc;
+    color: #219EBC;
+}
+
+.adminSiderbarBox:hover img, .teacherSidebarItem:hover .sidebarIcon {
+    transform: scale(1.1);
+}
+
+.selectedBoxAdmin, .teacherSidebarItem.active {
+    background: #FF9933;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(255, 153, 51, 0.25);
+}
+
+.selectedBoxAdmin span, .teacherSidebarItem.active .teacherSidebarLabel {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.teacherSidebarItem.active .sidebarIcon {
+    color: #ffffff;
+}
+
+.teacherSidebarItem:hover {
+    background: #FFF5EB;
+    color: #FF7A00;
+}
+
+/* Sidebar Groups */
+.sidebarGroup {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.sidebarGroupLabel {
+    font-size: 11px;
+    font-weight: 700;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 14px 8px 14px;
+    white-space: nowrap;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.collapsed .sidebarGroupLabel {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Teacher Sidebar Specifics */
+.teacherSidebarMenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.teacherSidebarHeader {
+    padding: 0 14px 12px 14px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.teacherSidebarTitle {
+    font-size: 11px;
+    font-weight: 700;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.collapsed .teacherSidebarTitle {
+    opacity: 0;
+}
+
+.teacherSidebarLabel {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease;
+}
+
+.collapsed .teacherSidebarLabel {
+    width: 0;
+    opacity: 0;
+    margin-left: 0;
+}
+
+.collapsed .teacherSidebarItem {
+    justify-content: center;
+    padding: 12px 0;
+}
+
+/* Dropdown Styles for Admin */
+.dropdownMenu {
+    margin-left: 10px;
+    padding-left: 20px;
+    border-left: 2px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.dropdownItem {
+    padding: 8px 12px;
+    font-size: 13px;
+    color: #64748b;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.dropdownItem:hover, .dropdownItem.selectedBox {
+    background: #f1f5f9;
+    color: #219EBC;
+}
+
+/* Mobile Responsiveness */
+.mobileToggleBtn {
+    display: none;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 1001;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #FF9933;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255, 153, 51, 0.3);
+    align-items: center;
+    justify-content: center;
+}
+
+.mobileOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(4px);
+    z-index: 99;
+}
+
+@media (max-width: 1024px) {
+    .adminSidebarContainer {
+        width: 88px;
+    }
+    
+    .adminSidebarContainer.expanded {
+        width: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobileToggleBtn {
+        display: flex;
+    }
+
+    .adminSidebarContainer {
+        position: fixed;
+        left: -300px;
+        width: 280px !important;
+        height: 100vh;
+        background: white;
+        box-shadow: 10px 0 30px rgba(0,0,0,0.1);
+        transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .adminSidebarContainer.mobileOpen {
+        left: 0;
+    }
+
+    .collapsed .teacherSidebarLabel {
+        width: auto;
+        opacity: 1;
+        margin-left: 12px;
+    }
+    
+    .collapsed .teacherSidebarItem {
+        justify-content: flex-start;
+        padding: 12px 14px;
+    }
+}
+

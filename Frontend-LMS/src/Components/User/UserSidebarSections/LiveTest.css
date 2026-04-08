@@ -1,0 +1,406 @@
+.LiveExamDetailPage{
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    min-height: 85vh;
+    width: 98%;
+    gap: 12px;
+}
+
+.LiveXamHeaderSection{
+    display: flex;
+    color: #23252E;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+}
+
+.BorderLine{
+    width: 100%;
+    border: 1px solid #D5F3F8;
+}
+
+.LiveTestCombineSection{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.UpcomingSectionLeft{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 75%;
+    min-height: 74vh;
+    border-radius: 16px;
+    padding: 1.25rem;
+    gap: 18px;
+    overflow-y: auto;
+    box-shadow: 0 18px 38px rgba(33, 158, 188, 0.08);
+}
+
+.UpcomingSectionLeft::-webkit-scrollbar,
+.TodayEventsList::-webkit-scrollbar {
+    width: 8px;
+}
+
+.UpcomingSectionLeft::-webkit-scrollbar-track,
+.TodayEventsList::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.UpcomingSectionLeft::-webkit-scrollbar-thumb,
+.TodayEventsList::-webkit-scrollbar-thumb {
+    background-color: #898FA7;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+
+.upcomingHeaderContainer,
+.upcomingHeaderContainerRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.upcomingTestHeader,
+.upcomingTestHeaderRight{
+    color: #23252E;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    border-left: 4px solid #FFB703;
+    padding-left: 10px;
+}
+
+.liveTestSummaryPills{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.summaryPill{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #EEFBFD;
+    border: 1px solid #D5F3F8;
+    border-radius: 999px;
+    padding: 8px 12px;
+    color: #176B87;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.summaryPill strong{
+    color: #23252E;
+}
+
+.summaryPill.warning{
+    background: #FFF4DE;
+    border-color: #FFD79A;
+}
+
+.summaryPill.success{
+    background: #E7F8EC;
+    border-color: #B9E7C5;
+}
+
+.examCardGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.examCardShell{
+    margin-bottom: 0;
+}
+
+.EventBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.TestDetailBox{
+    background-color: white;
+    border: 1px solid #EDEDF1;
+    padding: 14px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 12px 0 rgba(33, 158, 188, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.examEnhancedCard{
+    height: 100%;
+}
+
+.liveXamTimingDiv{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.XamTiming{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.liveTest{
+    background: #D9F7DE;
+    border-radius: 999px;
+    padding: 6px 10px;
+    border: none;
+    color: #16CA33;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.schedule-time{
+    color: #898FA7;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.joinClassActiveButton{
+    background: #219EBC;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 4px 6px 16px 0 rgba(60, 185, 212, 0.16);
+    cursor: pointer;
+}
+
+.ExamNameHeader{
+    color: #23252E;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.examMetaGrid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.examMetaTile{
+    background: #FFF9EC;
+    border: 1px solid #FFE1B0;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.examMetaTile span{
+    color: #8B6E3A;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.examMetaTile strong{
+    color: #23252E;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.TestCouseBox{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.TestDetailsDiv,
+.QuestionDetailsDiv,
+.TeacherSubjectEventBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    color: #6b728c;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.test-detail,
+.test-detail-event{
+    color: #555;
+    font-size: 14px;
+}
+
+.test-detail span{
+    color: #555;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.AdditionalDetails{
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+    color: #3B3E4E;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.CalenderSectionRight{
+    width: 25%;
+    background-color: #ffffff;
+    min-height: 74vh;
+    border-radius: 16px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 18px 38px rgba(33, 158, 188, 0.08);
+}
+
+.CalanderView{
+    display: flex;
+}
+
+.react-calendar{
+    border: none !important;
+    width: 100% !important;
+}
+
+.react-calendar__tile{
+    position: relative;
+    padding: 10px;
+}
+
+.event-dot{
+    height: 8px;
+    width: 8px;
+    background-color: #219EBC;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.TodayEventsList{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+}
+
+.TodayDate{
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.EventListItem{
+    padding: 12px;
+    border: 1px solid #E5E8F0;
+    border-radius: 14px;
+    background: #FAFCFF;
+}
+
+.LiveEventBox{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.BlueBox{
+    background: #DCE6F5;
+    border-radius: 999px;
+    padding: 6px 10px;
+    border: none;
+    color: #3B82F6;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.TestName-event{
+    font-size: 18px;
+    font-weight: 600;
+    color: #23252E;
+    margin-bottom: 6px;
+}
+
+.loader-container,
+.emptyExamState{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 360px;
+}
+
+.emptyExamState{
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    background: linear-gradient(135deg, #EEFBFD 0%, #FFF9EC 100%);
+    border: 1px dashed #B8DFE8;
+    border-radius: 18px;
+    padding: 32px;
+}
+
+.emptyExamTitle{
+    color: #23252E;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.emptyExamText,
+.noScheduleText{
+    color: #6B728C;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 1100px){
+    .LiveTestCombineSection{
+        flex-direction: column;
+    }
+
+    .UpcomingSectionLeft,
+    .CalenderSectionRight{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .LiveExamDetailPage{
+        width: 100%;
+        padding: 12px;
+    }
+
+    .upcomingHeaderContainer,
+    .upcomingHeaderContainerRight,
+    .liveXamTimingDiv{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .liveTestSummaryPills,
+    .examMetaGrid{
+        width: 100%;
+    }
+
+    .examMetaGrid{
+        grid-template-columns: 1fr;
+    }
+
+    .joinClassActiveButton{
+        width: 100%;
+    }
+}
